@@ -53,12 +53,42 @@
     .faq-answer    { overflow: hidden; height: 0; transition: height .35s ease; }
     .faq-icon      { transition: transform .3s ease; }
     .faq-btn.open .faq-icon { transform: rotate(45deg); }
+    .scarcity-bar  { background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%); }
+    .pulse-slow    { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .7; }
+    }
   </style>
 </head>
 <body class="font-sans text-gray-800 bg-white antialiased">
 
+<!-- ─── SCARCITY BANNER ─── -->
+<div id="scarcity-banner" class="fixed top-0 inset-x-0 z-50 scarcity-bar text-white py-3 px-4 shadow-lg">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-center sm:text-left">
+    <div class="flex items-center gap-2">
+      <span class="pulse-slow text-2xl">🔥</span>
+      <span class="font-bold text-lg">LIMITED OFFER</span>
+    </div>
+    <div class="flex-1 text-sm sm:text-base">
+      <span class="font-extrabold">25% OFF</span> for the next cohort — 
+      <span class="font-bold bg-white/20 px-2 py-0.5 rounded">Only 3 spots remaining</span>
+    </div>
+    <a href="#contact" class="bg-white text-red-600 hover:bg-gray-100 font-bold px-6 py-2 rounded-lg transition-colors whitespace-nowrap shadow-md">
+      Claim Your Spot →
+    </a>
+    <button onclick="dismissScarcityBanner()" 
+            class="absolute top-2 right-2 sm:relative sm:top-0 sm:right-0 text-white/70 hover:text-white p-1" 
+            aria-label="Close">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
 <!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+<nav class="fixed top-12 inset-x-0 z-40 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm transition-all duration-300" style="top: 3rem;">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
     <a href="#hero" class="flex items-center gap-2 font-bold text-navy-800 text-lg">
       <span class="text-emerald-500 text-2xl">⚡</span>
@@ -95,7 +125,7 @@
 </nav>
 
 <!-- ─── HERO ─── -->
-<section id="hero" class="gradient-hero pt-32 pb-24 px-6 text-white">
+<section id="hero" class="gradient-hero pt-40 pb-24 px-6 text-white">
   <div class="max-w-5xl mx-auto text-center">
     <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-8">
       <span class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></span>
@@ -982,6 +1012,23 @@
 
 <!-- ─── JAVASCRIPT ─── -->
 <script>
+  // Scarcity banner handling
+  const scarcityBanner = document.getElementById('scarcity-banner');
+  const nav = document.querySelector('nav');
+  
+  // Check if banner was dismissed
+  if (localStorage.getItem('scarcity-banner-dismissed') === 'true') {
+    scarcityBanner.style.display = 'none';
+    nav.style.top = '0';
+  }
+  
+  // Dismiss banner
+  window.dismissScarcityBanner = function() {
+    scarcityBanner.style.display = 'none';
+    nav.style.top = '0';
+    localStorage.setItem('scarcity-banner-dismissed', 'true');
+  };
+
   // Mobile menu toggle
   document.getElementById('menu-btn').addEventListener('click', () => {
     document.getElementById('mobile-menu').classList.toggle('hidden');
