@@ -222,33 +222,7 @@
   </div>
 </section>
 
-<!-- ─── LEAD CAPTURE ─── -->
-<section class="py-16 px-6 bg-emerald-500">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-white mb-4">
-      Want to see how AI can save you 40+ hours?
-    </h2>
-    <p class="text-white/90 text-lg mb-8">
-      Get our free guide: <strong>5 Recruiting Tasks You Should Automate This Week</strong>
-    </p>
-    <form id="lead-form" class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
-      <input 
-        type="email" 
-        name="email" 
-        placeholder="your@email.com" 
-        required
-        class="flex-1 px-6 py-4 rounded-xl text-gray-800 font-medium focus:outline-none focus:ring-4 focus:ring-white/30"
-      />
-      <button 
-        type="submit"
-        class="bg-navy-800 hover:bg-navy-900 text-white font-bold px-8 py-4 rounded-xl transition-colors whitespace-nowrap"
-      >
-        Get Free Guide
-      </button>
-    </form>
-    <p class="text-white/60 text-sm mt-4">No spam. Unsubscribe anytime. We respect your inbox.</p>
-  </div>
-</section>
+<!-- Lead capture form removed - focusing on direct call bookings instead -->
 
 <!-- ─── FEATURES ─── -->
 <section id="features" class="py-20 px-6 bg-gray-50">
@@ -1070,32 +1044,6 @@
   window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     nav.classList.toggle('shadow-md', window.scrollY > 10);
-  });
-
-  // Lead capture form
-  document.getElementById('lead-form')?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const email = e.target.email.value;
-    const button = e.target.querySelector('button');
-    const originalText = button.textContent;
-    
-    button.textContent = 'Sending...';
-    button.disabled = true;
-    
-    // TODO: Connect to your email marketing service (ConvertKit, Mailchimp, etc.)
-    // For now, just log it and show success
-    console.log('New lead:', email);
-    
-    // Simulate API call
-    setTimeout(() => {
-      button.textContent = '✓ Sent!';
-      button.classList.add('bg-emerald-700');
-      e.target.email.value = '';
-      
-      // Show thank you message
-      const form = document.getElementById('lead-form');
-      form.innerHTML = '<p class="text-white text-lg font-semibold">✓ Check your inbox! We just sent your free guide.</p>';
-    }, 1000);
   });
 
   // Pricing calculator
