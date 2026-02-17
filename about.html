@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Huffman AI Solutions</title>
+  <meta name="description" content="Huffman AI Solutions brings enterprise-level AI capabilities to small businesses at a price they can afford. Learn our story and mission." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: { 800: '#1e1b4b', 900: '#0f0c29' },
+            emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    .gradient-hero { background: linear-gradient(135deg, #0f0c29 0%, #1e1b4b 50%, #1a2a6c 100%); }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-white antialiased">
+
+<!-- ─── NAVIGATION ─── -->
+<nav class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2 font-bold text-navy-800 text-lg">
+      <span class="text-emerald-500 text-2xl">⚡</span>
+      Huffman AI Solutions
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+      <a href="index.html#features"  class="hover:text-navy-800 transition-colors">Features</a>
+      <a href="index.html#how"       class="hover:text-navy-800 transition-colors">How It Works</a>
+      <a href="index.html#pricing"   class="hover:text-navy-800 transition-colors">Pricing</a>
+      <a href="index.html#faq"       class="hover:text-navy-800 transition-colors">FAQ</a>
+      <a href="about.html"           class="text-navy-800 font-bold transition-colors">About</a>
+      <a href="index.html#contact"
+         class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
+        Book a Free Call
+      </a>
+    </div>
+    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-gray-600">
+    <a href="index.html#features">Features</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="index.html#faq">FAQ</a>
+    <a href="about.html" class="text-navy-800 font-bold">About</a>
+    <a href="index.html#contact" class="bg-emerald-500 text-white px-4 py-2 rounded-lg text-center font-semibold">Book a Free Call</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="gradient-hero pt-32 pb-20 px-6 text-white">
+  <div class="max-w-4xl mx-auto text-center">
+    <p class="text-emerald-400 font-semibold uppercase tracking-widest text-sm mb-4">Our Mission</p>
+    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+      Powerful AI Shouldn't Cost<br/><span class="text-emerald-400">$100,000</span>
+    </h1>
+    <p class="text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+      That's our entire philosophy. Bring enterprise-level AI to small businesses — at a price they can actually afford, with results they can actually measure.
+    </p>
+  </div>
+</section>
+
+<!-- ─── STORY ─── -->
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-3xl mx-auto">
+    <div class="prose prose-lg max-w-none">
+      <h2 class="text-3xl font-extrabold text-navy-800 mb-6">The Problem I Saw</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Hi, I'm Jake Huffman. I started Huffman AI Solutions because I kept seeing the same pattern: talented recruiting professionals burning out — not from their actual work, but from the admin pile around it.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Recruiters handling 20+ open reqs, drowning in 50+ emails a day, spending hours on interview scheduling back-and-forth, watching great candidates go cold because they couldn't respond fast enough. They weren't bad at their jobs — they were being crushed by the <em>overhead</em> of their jobs.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        The irony? AI could handle all of it. But only if you were a massive corporation with a $100k budget and a six-month implementation timeline. Small businesses were left with basic automation tools that were too rigid, VAs that were expensive and needed management, or just… doing it all themselves.
+      </p>
+
+      <div class="bg-gray-50 rounded-2xl p-8 mb-8">
+        <h3 class="text-xl font-bold text-navy-800 mb-4">The Gap Was Clear</h3>
+        <div class="grid sm:grid-cols-3 gap-6 text-center">
+          <div>
+            <p class="text-sm font-bold text-red-500 uppercase tracking-wide mb-2">Enterprise AI</p>
+            <p class="text-gray-600 text-sm">$100k+ implementations<br/>6–12 month projects<br/>Entire IT teams required</p>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-yellow-600 uppercase tracking-wide mb-2">Basic Automation</p>
+            <p class="text-gray-600 text-sm">Too rigid and generic<br/>Can't handle nuance<br/>Not actually intelligent</p>
+          </div>
+          <div>
+            <p class="text-sm font-bold text-orange-500 uppercase tracking-wide mb-2">Virtual Assistants</p>
+            <p class="text-gray-600 text-sm">$3,000–5,000/month<br/>Need management<br/>Not 24/7 available</p>
+          </div>
+        </div>
+        <div class="mt-6 text-center">
+          <p class="text-gray-500 font-medium">Small businesses were stuck. No good options.</p>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-extrabold text-navy-800 mb-6">The Solution</h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        We built something different: an AI employee built specifically for small businesses and recruiting firms. Not adapted from enterprise software, not a workflow connector, not a chatbot — an actual AI employee that thinks, learns your style, and works independently.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-8">
+        And we priced it for real businesses. Not $100k — $2,000/month. Not a six-month project — 1–2 weeks. Not a year-long contract — cancel anytime.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── VALUES ─── -->
+<section class="py-16 px-6 bg-gray-50">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-navy-800 text-center mb-12">What Makes Us Different</h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="text-2xl mb-3">🏗️</div>
+        <h3 class="font-bold text-navy-800 mb-2">Built for Small Business, Not Adapted</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Most AI companies build for enterprises and try to scale down. We started with small business needs from day one — affordable pricing, fast setup, no IT team required, cancel anytime.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="text-2xl mb-3">🧠</div>
+        <h3 class="font-bold text-navy-800 mb-2">AI Employee, Not Automation</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">We're not connecting apps or triggering workflows. We're giving you an AI employee that thinks, makes decisions, understands context, and learns your style over time.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="text-2xl mb-3">💰</div>
+        <h3 class="font-bold text-navy-800 mb-2">ROI-Obsessed</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">Every feature we build must either save you time or help you close more business. No buzzwords, no gimmicks — just work that pays for itself 4–7x over.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="text-2xl mb-3">🛡️</div>
+        <h3 class="font-bold text-navy-800 mb-2">Zero-Risk Trial</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">We set it up completely free. You use it for 2–4 weeks in your real business. If you don't see value, you owe $0. That's how confident we are that it works.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="text-2xl mb-3">🎯</div>
+        <h3 class="font-bold text-navy-800 mb-2">Practical, Not Flashy</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">We focus on what actually saves you time. No demo theater, no feature bloat — just results you can measure in hours saved and placements made.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
+        <div class="text-2xl mb-3">🤝</div>
+        <h3 class="font-bold text-navy-800 mb-2">Honest & Transparent</h3>
+        <p class="text-gray-500 text-sm leading-relaxed">If we're not a good fit for your business, we'll tell you upfront. We'd rather build long-term relationships than make a quick sale to someone we can't genuinely help.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── VISION ─── -->
+<section class="py-20 px-6 bg-white">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-6">The Vision</h2>
+    <p class="text-gray-500 leading-relaxed text-lg mb-6">
+      Small businesses are the backbone of the economy — but they're at a massive disadvantage when it comes to technology. Big companies have entire IT departments, custom software, and AI teams. Small businesses are stuck with email, spreadsheets, and manual processes.
+    </p>
+    <p class="text-gray-500 leading-relaxed text-lg mb-10">
+      <strong class="text-navy-800">Our vision: level the playing field.</strong> Give solo entrepreneurs and small teams access to the same AI capabilities that Amazon, Google, and Fortune 500 companies use internally — at a price and timeline that makes sense for a real small business.
+    </p>
+    <div class="bg-navy-800 rounded-2xl p-8 text-white">
+      <p class="text-2xl font-extrabold text-emerald-400 mb-2">"Democratizing AI for Small Business"</p>
+      <p class="text-white/70">Starting with recruiting firms. Expanding to every small business drowning in admin work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section class="py-20 px-6 bg-gray-50">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-4">Let's Get You Your Time Back</h2>
+    <p class="text-gray-500 text-lg mb-8">No sales pitch. No pressure. Just a 15-minute conversation about whether we're a good fit.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="index.html#contact"
+         class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-md">
+        Schedule a Free Discovery Call
+      </a>
+      <a href="index.html#faq"
+         class="w-full sm:w-auto border-2 border-navy-800 text-navy-800 hover:bg-navy-800 hover:text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors">
+        Read the FAQ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer class="bg-navy-900 text-white/50 py-10 px-6">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+    <div class="flex items-center gap-2 font-bold text-white/80">
+      <span class="text-emerald-400">⚡</span> Huffman AI Solutions
+    </div>
+    <div class="flex gap-6">
+      <a href="index.html#features" class="hover:text-white transition-colors">Features</a>
+      <a href="index.html#pricing"  class="hover:text-white transition-colors">Pricing</a>
+      <a href="index.html#faq"      class="hover:text-white transition-colors">FAQ</a>
+      <a href="about.html"          class="hover:text-white transition-colors">About</a>
+    </div>
+    <p>© 2025 Huffman AI Solutions LLC · Raleigh, NC</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
