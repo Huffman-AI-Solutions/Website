@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://huffmansolutionsai.com/" />
   <meta property="og:title" content="Huffman AI Solutions – AI Employees for Recruiting Firms" />
   <meta property="og:description" content="Your AI employee handles email, interview scheduling, candidate nurturing, and daily briefings — 24/7. Free setup, free trial." />
-  <meta property="og:image" content="https://huffmansolutionsai.com/og-image.jpg" />
+  <meta property="og:image" content="og-image.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Huffman AI Solutions – AI Employees for Recruiting Firms" />
   <meta name="twitter:description" content="Your AI employee handles email, interview scheduling, candidate nurturing, and daily briefings — 24/7." />
@@ -67,12 +67,12 @@
 <div id="scarcity-banner" class="fixed top-0 inset-x-0 z-50 scarcity-bar text-white py-3 px-4 shadow-lg">
   <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-center sm:text-left">
     <div class="flex items-center gap-2">
-      <span class="pulse-slow text-2xl">🔥</span>
-      <span class="font-bold text-lg">LIMITED OFFER</span>
+      <span class="pulse-slow text-2xl">🚀</span>
+      <span class="font-bold text-lg">FOUNDING MEMBER PRICING</span>
     </div>
     <div class="flex-1 text-sm sm:text-base">
-      <span class="font-extrabold">25% OFF</span> for the next cohort — 
-      <span class="font-bold bg-white/20 px-2 py-0.5 rounded">Only 3 spots remaining</span>
+      <span class="font-extrabold">25% off</span> ends March 31, 2026 — 
+      <span id="countdown" class="font-bold bg-white/20 px-2 py-0.5 rounded"></span>
     </div>
     <a href="#contact" class="bg-white text-red-600 hover:bg-gray-100 font-bold px-6 py-2 rounded-lg transition-colors whitespace-nowrap shadow-md">
       Claim Your Spot →
@@ -236,14 +236,13 @@
       <!-- Card -->
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Email Management Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/91808488414d42f69c7f6cc7b9a66cce" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/91808488414d42f69c7f6cc7b9a66cce?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/91808488414d42f69c7f6cc7b9a66cce-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">📧</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Email Management</h3>
@@ -253,14 +252,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Interview Coordination Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/d9b1544cb82c40a6808bd46b8d70f90d" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/d9b1544cb82c40a6808bd46b8d70f90d?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/d9b1544cb82c40a6808bd46b8d70f90d-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">📅</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Interview Coordination</h3>
@@ -270,14 +268,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Candidate Nurturing Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/45b0430eb52845a3a42c5361a601b547" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/45b0430eb52845a3a42c5361a601b547?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/45b0430eb52845a3a42c5361a601b547-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">🔥</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Candidate Nurturing</h3>
@@ -287,14 +284,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Daily Briefings Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/fa2e72bc9d9345e58e7c762f3ebe458a" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/fa2e72bc9d9345e58e7c762f3ebe458a?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/fa2e72bc9d9345e58e7c762f3ebe458a-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">📊</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Daily Briefings</h3>
@@ -304,14 +300,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Candidate Research Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/a214775010d54eb5a33d12823a1645ba" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/a214775010d54eb5a33d12823a1645ba?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/a214775010d54eb5a33d12823a1645ba-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">🔍</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Candidate Research</h3>
@@ -321,14 +316,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- CRM & Data Entry Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/2a31fcee09d34f8e8f41c658aec8fcc6" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/2a31fcee09d34f8e8f41c658aec8fcc6?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/2a31fcee09d34f8e8f41c658aec8fcc6-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">📝</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">CRM & Data Entry</h3>
@@ -338,14 +332,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Client Management Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/cf366aa04d964a78a5786a68c7d47d65" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/cf366aa04d964a78a5786a68c7d47d65?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/cf366aa04d964a78a5786a68c7d47d65-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">📈</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Client Management</h3>
@@ -355,14 +348,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Pipeline Management Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/1dcfe4d673b64e97af90757599be6675" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/1dcfe4d673b64e97af90757599be6675?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/1dcfe4d673b64e97af90757599be6675-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">💼</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Pipeline Management</h3>
@@ -372,14 +364,13 @@
 
       <div class="card-hover bg-white rounded-2xl p-7 border border-gray-100 shadow-sm">
         <!-- Interview Prep & Docs Demo -->
-        <div class="mb-4 rounded-xl overflow-hidden bg-gray-100 aspect-video">
-          <iframe 
-            src="https://www.loom.com/embed/8f74e7d49e804c6dbf8b640db213aefd" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen
-            class="w-full h-full"
-          ></iframe>
+        <div class="mb-4 rounded-xl overflow-hidden bg-gray-900 aspect-video relative cursor-pointer group" onclick="this.innerHTML='<iframe src=\'https://www.loom.com/embed/8f74e7d49e804c6dbf8b640db213aefd?autoplay=1\' frameborder=\'0\' allow=\'autoplay\' allowfullscreen class=\'w-full h-full\'></iframe>'">
+          <img src="https://cdn.loom.com/sessions/thumbnails/8f74e7d49e804c6dbf8b640db213aefd-with-play.gif" alt="Demo video" class="w-full h-full object-cover" loading="lazy" onerror="this.style.display='none'" />
+          <div class="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/40 transition-colors">
+            <div class="w-16 h-16 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
         </div>
         <div class="text-3xl mb-4">📞</div>
         <h3 class="text-lg font-bold text-navy-800 mb-2">Interview Prep & Docs</h3>
@@ -397,7 +388,52 @@
   </div>
 </section>
 
-<!-- Large demo video section removed - individual task demos in Features section instead --><!-- ─── HOW IT WORKS ─── -->
+<!-- Large demo video section removed - individual task demos in Features section instead -->
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="py-20 px-6 bg-gray-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-14">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-navy-800 mb-4">What Our Beta Users Are Saying</h2>
+      <p class="text-gray-500 text-lg">Early results from our pilot program</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Testimonial 1 -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        <div class="text-emerald-500 text-5xl font-serif leading-none mb-4">"</div>
+        <div class="flex gap-1 mb-4">
+          <span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-6">I was skeptical about AI handling candidate emails, but after the first week I was hooked. It drafted responses that sounded exactly like me — candidates had no idea. I'm getting back to people in minutes instead of hours.</p>
+        <p class="text-sm font-semibold text-navy-800">— Early Beta User</p>
+        <p class="text-sm text-gray-400">Solo Recruiter, Charlotte NC</p>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        <div class="text-emerald-500 text-5xl font-serif leading-none mb-4">"</div>
+        <div class="flex gap-1 mb-4">
+          <span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-6">The morning briefing alone is worth it. I used to spend the first 45 minutes of every day sorting through emails and figuring out what needed attention. Now I just open my briefing and I'm ready to go.</p>
+        <p class="text-sm font-semibold text-navy-800">— Early Beta User</p>
+        <p class="text-sm text-gray-400">5-Person Recruiting Agency</p>
+      </div>
+      <!-- Testimonial 3 -->
+      <div class="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+        <div class="text-emerald-500 text-5xl font-serif leading-none mb-4">"</div>
+        <div class="flex gap-1 mb-4">
+          <span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
+        </div>
+        <p class="text-gray-600 leading-relaxed mb-6">We were paying $3,800/month for a part-time coordinator who worked 9-5. The AI handles more work, never calls in sick, and costs half as much. The ROI was obvious after week one.</p>
+        <p class="text-sm font-semibold text-navy-800">— Early Beta User</p>
+        <p class="text-sm text-gray-400">Agency Owner</p>
+      </div>
+    </div>
+    <p class="text-center text-gray-400 text-sm mt-8">Beta program testimonials. Names withheld during pilot phase.</p>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ─── -->
 <section id="how" class="py-20 px-6 bg-white">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14">
@@ -543,7 +579,7 @@
 
       <!-- Solo Recruiter -->
       <div class="bg-white rounded-2xl p-8 border-2 border-emerald-500 shadow-sm relative">
-        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-xs font-bold px-4 py-1 rounded-full">🔥 25% OFF - 3 SPOTS LEFT</div>
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-xs font-bold px-4 py-1 rounded-full">🚀 FOUNDING MEMBER RATE</div>
         <h3 class="text-lg font-bold text-navy-800 mb-1">Solo Recruiter</h3>
         <p class="text-gray-400 text-sm mb-6">One recruiter, one AI employee</p>
         <div class="mb-6">
@@ -552,6 +588,7 @@
             <span class="text-5xl font-extrabold text-emerald-600">$1,500</span>
           </div>
           <span class="text-gray-400">/month</span>
+          <p class="text-emerald-600 text-sm font-semibold mt-1">Lock in this rate before April 1</p>
           <p class="text-gray-400 text-sm mt-1">Setup &amp; trial: <strong class="text-navy-800">$0</strong></p>
         </div>
         <ul class="space-y-3 text-sm text-gray-600 mb-6">
@@ -570,7 +607,7 @@
 
       <!-- Agency -->
       <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm relative">
-        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-red-600 text-white text-xs font-bold px-4 py-1 rounded-full">🔥 25% OFF - 3 SPOTS LEFT</div>
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-emerald-600 text-white text-xs font-bold px-4 py-1 rounded-full">🚀 FOUNDING MEMBER RATE</div>
         <h3 class="text-lg font-bold text-navy-800 mb-1">Agency</h3>
         <p class="text-gray-400 text-sm mb-6">Multiple recruiters, each with their own AI employee</p>
         <div class="mb-5">
@@ -1085,6 +1122,21 @@
   
   // Initialize calculator
   if (slider) calculateCost(parseInt(slider.value));
+
+  // Countdown timer for founding member pricing
+  function updateCountdown() {
+    const end = new Date('2026-04-01T00:00:00-04:00');
+    const now = new Date();
+    const diff = end - now;
+    if (diff <= 0) {
+      document.getElementById('countdown').textContent = 'Offer expired';
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById('countdown').textContent = days + ' days left';
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 3600000);
 </script>
 
 </body>
