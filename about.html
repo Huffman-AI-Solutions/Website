@@ -71,6 +71,13 @@
       line-height: 1.7;
     }
     
+    /* Nav links use Cormorant, no uppercase transform */
+    nav a {
+      font-family: var(--font-display);
+      text-transform: none;
+      letter-spacing: normal;
+    }
+    
     h1, h2, h3 {
       font-family: var(--font-display);
       font-weight: 600;
@@ -100,19 +107,19 @@
 <body>
 
 <!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-0 inset-x-0 z-50 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); shadow-sm">
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); shadow-sm transition-all duration-300">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
     <a href="index.html" class="flex items-center gap-3">
       <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 md:h-10 w-auto" />
       <span class="font-display font-semibold text-xl md:text-2xl" style="color: var(--color-ink);">Huffman AI Solutions</span>
     </a>
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium" style="color: var(--color-muted);">
+    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color: var(--color-muted);">
       <a href="index.html#features" class="hover:text-ink transition-colors">Features</a>
       <a href="index.html#how" class="hover:text-ink transition-colors">How It Works</a>
       <a href="index.html#pricing" class="hover:text-ink transition-colors">Pricing</a>
       <a href="index.html#faq" class="hover:text-ink transition-colors">FAQ</a>
       <a href="about.html" class="text-ink font-semibold">About</a>
-      <a href="index.html#contact" class="px-4 py-2 rounded-lg font-semibold transition-colors" style="background-color: var(--color-gold); color: var(--color-surface);">
+      <a href="index.html#contact" class="px-4 py-2 rounded-lg font-display font-semibold transition-colors" style="background-color: var(--color-gold); color: var(--color-surface);">
         Book a Call
       </a>
     </div>
@@ -126,7 +133,7 @@
   </div>
   
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100" style="background-color: var(--color-bg); py-4 px-6">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4 px-6 flex flex-col gap-4 font-display text-base font-medium" style="background-color: var(--color-bg); color: var(--color-muted);">
     <a href="index.html#features" class="block py-2 text-muted hover:text-ink">Features</a>
     <a href="index.html#how" class="block py-2 text-muted hover:text-ink">How It Works</a>
     <a href="index.html#pricing" class="block py-2 text-muted hover:text-ink">Pricing</a>
