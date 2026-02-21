@@ -189,10 +189,11 @@
 </div>
 
 <!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-12 inset-x-0 z-40 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm transition-all duration-300" style="top: 3rem;">
+<nav class="fixed top-12 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); top: 3rem; shadow-sm transition-all duration-300" style="top: 3rem;">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-    <a href="#hero" class="flex items-center">
+    <a href="#hero" class="flex items-center gap-3">
       <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 md:h-10 w-auto" />
+      <span class="font-display font-semibold text-xl md:text-2xl" style="color: var(--color-ink);">Huffman AI Solutions</span>
     </a>
     <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
       <a href="#features"   class="hover:text-ink transition-colors">Features</a>
@@ -214,7 +215,7 @@
     </button>
   </div>
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-gray-600">
+  <div id="mobile-menu" class="hidden md:hidden border-t" style="background-color: var(--color-bg); border-gray-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-ink">
     <a href="#features"  class="hover:text-ink">Features</a>
     <a href="#how"       class="hover:text-ink">How It Works</a>
     <a href="#pricing"   class="hover:text-ink">Pricing</a>
@@ -231,8 +232,7 @@
       <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
       Free Setup · Free Trial · No Contracts
     </div>
-    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6">
-      Hire an AI Employee<br/>
+    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6"><span class="text-white">Hire an AI Employee</span><br/>
       <span class="text-gold">That Never Stops Working</span>
     </h1>
     <p class="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -260,7 +260,7 @@
 <!-- ─── SOCIAL PROOF STRIP ─── -->
 <div class="bg-gray-50 border-y border-gray-100 py-8 px-6">
   <div class="max-w-5xl mx-auto text-center">
-    <p class="text-sm text-gray-500 uppercase tracking-widest font-semibold mb-6">Trusted by Recruiting Professionals</p>
+    <p class="text-sm text-muted uppercase tracking-widest font-semibold mb-6">Trusted by Recruiting Professionals</p>
     <div class="flex flex-wrap justify-center gap-8 md:gap-16 text-gray-400">
       <div class="text-center">
         <p class="text-3xl font-extrabold text-ink">20+</p>
@@ -286,7 +286,7 @@
 <section class="py-20 px-6 bg-white">
   <div class="max-w-5xl mx-auto">
     <h2 class="text-3xl md:text-4xl font-extrabold text-center text-ink mb-4">Sound Familiar?</h2>
-    <p class="text-center text-gray-500 mb-12 text-lg">Before vs. after your AI employee</p>
+    <p class="text-center text-muted mb-12 text-lg">Before vs. after your AI employee</p>
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Before -->
       <div class="bg-red-50 border border-red-100 rounded-2xl p-8">
@@ -329,7 +329,7 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-4">What Your AI Employee Does</h2>
-      <p class="text-gray-500 text-lg max-w-2xl mx-auto">This isn't automation. It's an actual AI employee that thinks, learns, and works independently — built specifically for recruiting.</p>
+      <p class="text-muted text-lg max-w-2xl mx-auto">This isn't automation. It's an actual AI employee that thinks, learns, and works independently — built specifically for recruiting.</p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
@@ -346,7 +346,7 @@
         </div>
         <div class="text-3xl mb-4">📧</div>
         <h3 class="text-lg font-bold text-ink mb-2">Email Management</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Reads, categorizes, and drafts responses to every candidate and client email — even at 2 AM. Flags urgent items, drafts interview coordination emails, auto-acknowledges applications.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Reads, categorizes, and drafts responses to every candidate and client email — even at 2 AM. Flags urgent items, drafts interview coordination emails, auto-acknowledges applications.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 10–15 hrs/week</span>
       </div>
 
@@ -362,7 +362,7 @@
         </div>
         <div class="text-3xl mb-4">📅</div>
         <h3 class="text-lg font-bold text-ink mb-2">Interview Coordination</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Checks calendars, proposes times that work for all parties, books interviews, sends reminders, and handles rescheduling — all automatically.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Checks calendars, proposes times that work for all parties, books interviews, sends reminders, and handles rescheduling — all automatically.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 5–8 hrs/week</span>
       </div>
 
@@ -378,7 +378,7 @@
         </div>
         <div class="text-3xl mb-4">🔥</div>
         <h3 class="text-lg font-bold text-ink mb-2">Candidate Nurturing</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Never lose a great candidate. Automatic check-ins at 24hr, 3-day, and 7-day intervals. Post-interview follow-ups, offer status updates, passive candidate re-engagement.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Never lose a great candidate. Automatic check-ins at 24hr, 3-day, and 7-day intervals. Post-interview follow-ups, offer status updates, passive candidate re-engagement.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 5–10 hrs/week</span>
       </div>
 
@@ -394,7 +394,7 @@
         </div>
         <div class="text-3xl mb-4">📊</div>
         <h3 class="text-lg font-bold text-ink mb-2">Daily Briefings</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Every morning at 8:30 AM: new applications (pre-screened), today's interview schedule with candidate backgrounds, urgent client requests, and your top action items.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Every morning at 8:30 AM: new applications (pre-screened), today's interview schedule with candidate backgrounds, urgent client requests, and your top action items.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 30–60 min/day</span>
       </div>
 
@@ -410,7 +410,7 @@
         </div>
         <div class="text-3xl mb-4">🔍</div>
         <h3 class="text-lg font-bold text-ink mb-2">Candidate Research</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Pre-screens candidates against job requirements, pulls background info, flags red flags, highlights top matches with reasoning — before you even look at a resume.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Pre-screens candidates against job requirements, pulls background info, flags red flags, highlights top matches with reasoning — before you even look at a resume.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 3–5 hrs/week</span>
       </div>
 
@@ -426,7 +426,7 @@
         </div>
         <div class="text-3xl mb-4">📝</div>
         <h3 class="text-lg font-bold text-ink mb-2">CRM & Data Entry</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Auto-logs every email, call, and interview. Updates candidate status through pipeline stages. Tracks client history and notes. Your CRM stays accurate — automatically.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Auto-logs every email, call, and interview. Updates candidate status through pipeline stages. Tracks client history and notes. Your CRM stays accurate — automatically.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 4–6 hrs/week</span>
       </div>
 
@@ -442,7 +442,7 @@
         </div>
         <div class="text-3xl mb-4">📈</div>
         <h3 class="text-lg font-bold text-ink mb-2">Client Management</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Proactive pipeline updates to hiring managers. Automated check-ins on open reqs. Drafts candidate presentation emails. Flags at-risk client relationships before they go cold.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Proactive pipeline updates to hiring managers. Automated check-ins on open reqs. Drafts candidate presentation emails. Flags at-risk client relationships before they go cold.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 2–3 hrs/week</span>
       </div>
 
@@ -458,7 +458,7 @@
         </div>
         <div class="text-3xl mb-4">💼</div>
         <h3 class="text-lg font-bold text-ink mb-2">Pipeline Management</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Responds to candidate applications with next steps. Tracks progress through pipeline stages. Flags top candidates for priority review. Drafts LinkedIn posts for new openings.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Responds to candidate applications with next steps. Tracks progress through pipeline stages. Flags top candidates for priority review. Drafts LinkedIn posts for new openings.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 3–5 hrs/week</span>
       </div>
 
@@ -474,7 +474,7 @@
         </div>
         <div class="text-3xl mb-4">📞</div>
         <h3 class="text-lg font-bold text-ink mb-2">Interview Prep & Docs</h3>
-        <p class="text-gray-500 text-sm leading-relaxed mb-4">Sends you candidate background and key questions before each interview. Documents feedback and next steps after. Extracts action items so nothing falls through.</p>
+        <p class="text-muted text-sm leading-relaxed mb-4">Sends you candidate background and key questions before each interview. Documents feedback and next steps after. Extracts action items so nothing falls through.</p>
         <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full">Save 2–4 hrs/week</span>
       </div>
 
@@ -495,7 +495,7 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-4">What Our Beta Users Are Saying</h2>
-      <p class="text-gray-500 text-lg">Early results from our pilot program</p>
+      <p class="text-muted text-lg">Early results from our pilot program</p>
     </div>
     <div class="grid md:grid-cols-3 gap-8">
       <!-- Testimonial 1 -->
@@ -504,7 +504,7 @@
         <div class="flex gap-1 mb-4">
           <span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-6">I was skeptical about AI handling candidate emails, but after the first week I was hooked. It drafted responses that sounded exactly like me — candidates had no idea. I'm getting back to people in minutes instead of hours.</p>
+        <p class="text-muted leading-relaxed mb-6">I was skeptical about AI handling candidate emails, but after the first week I was hooked. It drafted responses that sounded exactly like me — candidates had no idea. I'm getting back to people in minutes instead of hours.</p>
         <p class="text-sm font-semibold text-ink">— Early Beta User</p>
         <p class="text-sm text-gray-400">Solo Recruiter, Charlotte NC</p>
       </div>
@@ -514,7 +514,7 @@
         <div class="flex gap-1 mb-4">
           <span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-6">The morning briefing alone is worth it. I used to spend the first 45 minutes of every day sorting through emails and figuring out what needed attention. Now I just open my briefing and I'm ready to go.</p>
+        <p class="text-muted leading-relaxed mb-6">The morning briefing alone is worth it. I used to spend the first 45 minutes of every day sorting through emails and figuring out what needed attention. Now I just open my briefing and I'm ready to go.</p>
         <p class="text-sm font-semibold text-ink">— Early Beta User</p>
         <p class="text-sm text-gray-400">5-Person Recruiting Agency</p>
       </div>
@@ -524,7 +524,7 @@
         <div class="flex gap-1 mb-4">
           <span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span><span class="text-yellow-400">★</span>
         </div>
-        <p class="text-gray-600 leading-relaxed mb-6">We were paying $3,800/month for a part-time coordinator who worked 9-5. The AI handles more work, never calls in sick, and costs half as much. The ROI was obvious after week one.</p>
+        <p class="text-muted leading-relaxed mb-6">We were paying $3,800/month for a part-time coordinator who worked 9-5. The AI handles more work, never calls in sick, and costs half as much. The ROI was obvious after week one.</p>
         <p class="text-sm font-semibold text-ink">— Early Beta User</p>
         <p class="text-sm text-gray-400">Agency Owner</p>
       </div>
@@ -538,32 +538,32 @@
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-4">Our Offer</h2>
-      <p class="text-gray-500 text-lg">Zero risk. We do all the work. You just use it.</p>
+      <p class="text-muted text-lg">Zero risk. We do all the work. You just use it.</p>
     </div>
     <div class="grid md:grid-cols-4 gap-6">
       <div class="text-center">
         <div class="w-14 h-14 bg-dark text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4">1</div>
         <h3 class="font-bold text-ink mb-2">Free Discovery Call</h3>
-        <p class="text-gray-500 text-sm">15 minutes. We learn your biggest time-wasters and whether we're a good fit. No sales pitch.</p>
+        <p class="text-muted text-sm">15 minutes. We learn your biggest time-wasters and whether we're a good fit. No sales pitch.</p>
       </div>
       <div class="text-center">
         <div class="w-14 h-14 bg-dark text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4">2</div>
         <h3 class="font-bold text-ink mb-2">Custom Setup</h3>
-        <p class="text-gray-500 text-sm">1–2 weeks. We connect your email and calendar, train the AI on your style, and build your custom workflows — 100% free.</p>
+        <p class="text-muted text-sm">1–2 weeks. We connect your email and calendar, train the AI on your style, and build your custom workflows — 100% free.</p>
       </div>
       <div class="text-center">
         <div class="w-14 h-14 bg-dark text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4">3</div>
         <h3 class="font-bold text-ink mb-2">Free Trial</h3>
-        <p class="text-gray-500 text-sm">2–4 weeks using it in your real business with your actual candidates and clients. We optimize based on feedback.</p>
+        <p class="text-muted text-sm">2–4 weeks using it in your real business with your actual candidates and clients. We optimize based on feedback.</p>
       </div>
       <div class="text-center">
         <div class="w-14 h-14 bg-gold text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4">4</div>
         <h3 class="font-bold text-ink mb-2">Keep It or Cancel</h3>
-        <p class="text-gray-500 text-sm">Love it? <strong>$2,000/month</strong>, cancel anytime. Don't love it? You owe $0. No hard feelings.</p>
+        <p class="text-muted text-sm">Love it? <strong>$2,000/month</strong>, cancel anytime. Don't love it? You owe $0. No hard feelings.</p>
       </div>
     </div>
     <div class="mt-10 text-center">
-      <p class="text-gray-500 mb-6 font-medium">No contracts. No setup fees. No risk.</p>
+      <p class="text-muted mb-6 font-medium">No contracts. No setup fees. No risk.</p>
       <a href="#contact" class="inline-block bg-gold hover:bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-md">
         Schedule Your Free Discovery Call
       </a>
@@ -671,7 +671,7 @@
   <div class="max-w-7xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-4">Choose Your Plan</h2>
-      <p class="text-gray-500 text-lg">Transparent pricing. Scale as you grow.</p>
+      <p class="text-muted text-lg">Transparent pricing. Scale as you grow.</p>
       <div class="inline-flex items-center gap-2 bg-red-50 border border-red-200 rounded-full px-5 py-2 text-sm font-semibold text-red-700 mt-4">
         <span class="text-xl">🔥</span>
         <span>FOUNDING MEMBER: 25% OFF FOREVER — First 20 customers only</span>
@@ -684,7 +684,7 @@
       <!-- Starter -->
       <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
         <h3 class="text-2xl font-bold text-ink mb-2">Starter</h3>
-        <p class="text-gray-500 text-sm mb-6">For solo recruiters getting started</p>
+        <p class="text-muted text-sm mb-6">For solo recruiters getting started</p>
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-1">
             <span class="text-2xl font-bold text-gray-400 line-through">$1,500</span>
@@ -737,7 +737,7 @@
       <div class="bg-white rounded-2xl p-8 border-2 border-gold shadow-lg relative transform md:scale-105">
         <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-white text-xs font-bold px-4 py-1 rounded-full">⭐ MOST POPULAR</div>
         <h3 class="text-2xl font-bold text-ink mb-2">Pro</h3>
-        <p class="text-gray-500 text-sm mb-6">For active recruiters managing multiple searches</p>
+        <p class="text-muted text-sm mb-6">For active recruiters managing multiple searches</p>
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-1">
             <span class="text-2xl font-bold text-gray-400 line-through">$2,500</span>
@@ -789,7 +789,7 @@
       <!-- Enterprise -->
       <div class="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
         <h3 class="text-2xl font-bold text-ink mb-2">Enterprise</h3>
-        <p class="text-gray-500 text-sm mb-6">For high-volume recruiters & agencies</p>
+        <p class="text-muted text-sm mb-6">For high-volume recruiters & agencies</p>
         <div class="mb-6">
           <div class="flex items-baseline gap-2 mb-1">
             <span class="text-2xl font-bold text-gray-400 line-through">$5,000</span>
@@ -854,7 +854,7 @@
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-4">How We Compare</h2>
-      <p class="text-gray-500 text-lg">You have options. Here's why AI Employee is the right one.</p>
+      <p class="text-muted text-lg">You have options. Here's why AI Employee is the right one.</p>
     </div>
     
     <div class="overflow-x-auto">
@@ -939,7 +939,7 @@
     </div>
     
     <div class="mt-10 text-center">
-      <p class="text-gray-500 mb-6 text-lg font-medium">The only solution that works 24/7, thinks like a recruiter, and costs less than a coordinator.</p>
+      <p class="text-muted mb-6 text-lg font-medium">The only solution that works 24/7, thinks like a recruiter, and costs less than a coordinator.</p>
       <a href="#contact" class="inline-block bg-gold hover:bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-md">
         Get Started →
       </a>
@@ -952,7 +952,7 @@
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-4">Frequently Asked Questions</h2>
-      <p class="text-gray-500 text-lg">Real answers to real questions.</p>
+      <p class="text-muted text-lg">Real answers to real questions.</p>
     </div>
 
     <div class="space-y-3" id="faq-list">
@@ -1043,10 +1043,10 @@
     <div>
       <p class="text-gold font-semibold uppercase tracking-wide text-sm mb-3">Our Mission</p>
       <h2 class="text-3xl md:text-4xl font-extrabold text-ink mb-6">Powerful AI Shouldn't Be Reserved for Fortune 500 Companies</h2>
-      <p class="text-gray-500 leading-relaxed mb-6">
+      <p class="text-muted leading-relaxed mb-6">
         Enterprise companies spend millions on custom AI solutions. Solo recruiters and small firms are left drowning in email and admin work — stuck with expensive coordinators or doing it all themselves.
       </p>
-      <p class="text-gray-500 leading-relaxed mb-8">
+      <p class="text-muted leading-relaxed mb-8">
         We built Huffman AI Solutions to level the playing field. Enterprise-level AI for small businesses — at a price you can actually afford, with results you can actually measure.
       </p>
       <a href="about.html" class="inline-block border-2 border-navy-800 text-ink hover:bg-dark hover:text-white font-bold px-6 py-3 rounded-xl transition-colors">
@@ -1056,19 +1056,19 @@
     <div class="grid grid-cols-2 gap-4">
       <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100">
         <p class="text-4xl font-extrabold text-ink">60%</p>
-        <p class="text-gray-500 text-sm mt-2">Less than hiring a coordinator</p>
+        <p class="text-muted text-sm mt-2">Less than hiring a coordinator</p>
       </div>
       <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100">
         <p class="text-4xl font-extrabold text-gold">24/7</p>
-        <p class="text-gray-500 text-sm mt-2">Always available</p>
+        <p class="text-muted text-sm mt-2">Always available</p>
       </div>
       <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100">
         <p class="text-4xl font-extrabold text-ink">1–2</p>
-        <p class="text-gray-500 text-sm mt-2">Weeks to go live</p>
+        <p class="text-muted text-sm mt-2">Weeks to go live</p>
       </div>
       <div class="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100">
         <p class="text-4xl font-extrabold text-gold">$0</p>
-        <p class="text-gray-500 text-sm mt-2">Setup cost</p>
+        <p class="text-muted text-sm mt-2">Setup cost</p>
       </div>
     </div>
   </div>

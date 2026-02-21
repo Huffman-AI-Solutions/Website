@@ -100,10 +100,11 @@
 <body>
 
 <!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+<nav class="fixed top-0 inset-x-0 z-50 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); shadow-sm">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-    <a href="index.html" class="flex items-center">
+    <a href="index.html" class="flex items-center gap-3">
       <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 md:h-10 w-auto" />
+      <span class="font-display font-semibold text-xl md:text-2xl" style="color: var(--color-ink);">Huffman AI Solutions</span>
     </a>
     <div class="hidden md:flex items-center gap-8 text-sm font-medium" style="color: var(--color-muted);">
       <a href="index.html#features" class="hover:text-ink transition-colors">Features</a>
@@ -125,7 +126,7 @@
   </div>
   
   <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 bg-white py-4 px-6">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100" style="background-color: var(--color-bg); py-4 px-6">
     <a href="index.html#features" class="block py-2 text-muted hover:text-ink">Features</a>
     <a href="index.html#how" class="block py-2 text-muted hover:text-ink">How It Works</a>
     <a href="index.html#pricing" class="block py-2 text-muted hover:text-ink">Pricing</a>
