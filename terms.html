@@ -5,233 +5,261 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service – Huffman AI Solutions</title>
   <meta name="description" content="Terms of Service for Huffman AI Solutions. Understand the terms governing our AI employee services." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="huffman-ai-secondary-logo.jpg" />
+  <link rel="apple-touch-icon" href="huffman-ai-secondary-logo.jpg" />
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            navy: { 800: '#1e1b4b', 900: '#0f0c29' },
-            emerald: { 400: '#34d399', 500: '#10b981', 600: '#059669' }
+            ink: '#0d0d0d',
+            dark: '#1a1a2e',
+            gold: '#c8a96e',
+            muted: '#6b6560',
+            rule: '#d4cfc9',
+            surface: '#ffffff',
+            bg: '#f5f3ef',
           },
-          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+          fontFamily: {
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
+            mono: ['IBM Plex Mono', 'Courier New', 'monospace'],
+          }
         }
       }
     }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
-    .gradient-hero { background: linear-gradient(135deg, #0f0c29 0%, #1e1b4b 50%, #1a2a6c 100%); }
+    :root {
+      --color-bg: #f5f3ef;
+      --color-ink: #0d0d0d;
+      --color-dark: #1a1a2e;
+      --color-gold: #c8a96e;
+      --color-muted: #6b6560;
+      --color-rule: #d4cfc9;
+      --color-surface: #ffffff;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+      --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+    }
+    body { background-color: var(--color-bg); color: var(--color-ink); font-family: var(--font-body); font-weight: 300; font-size: 1rem; line-height: 1.8; }
+    h1, h2, h3 { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.01em; color: var(--color-ink); }
+    h1 { font-size: clamp(2.5rem, 6vw, 4rem); line-height: 1.08; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); line-height: 1.1; margin-top: 2.5rem; margin-bottom: 1rem; }
+    h3 { font-size: 1.2rem; line-height: 1.3; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { color: var(--color-muted); margin-bottom: 1rem; }
+    ul { color: var(--color-muted); margin-bottom: 1rem; }
+    li { margin-bottom: 0.4rem; }
+    a.accent { color: var(--color-gold); }
+    a.accent:hover { text-decoration: underline; }
   </style>
 </head>
-<body class="font-sans text-gray-800 bg-white antialiased">
+<body>
 
-<!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
-  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-    <a href="index.html" class="flex items-center gap-2 font-bold text-navy-800 text-lg">
-      <span class="text-emerald-500 text-2xl">⚡</span>
-      Huffman AI Solutions
+<!-- ─── HEADER / HERO ─── -->
+<section class="pt-16 pb-12 px-6" style="background: var(--color-dark);">
+  <div class="max-w-4xl mx-auto">
+    <a href="index.html" class="flex items-center gap-3 mb-10">
+      <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 w-auto" />
+      <span class="font-display font-semibold text-xl" style="color: rgba(255,255,255,0.8);">Huffman AI Solutions</span>
     </a>
-    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
-      <a href="index.html#features"  class="hover:text-navy-800 transition-colors">Features</a>
-      <a href="index.html#how"       class="hover:text-navy-800 transition-colors">How It Works</a>
-      <a href="index.html#pricing"   class="hover:text-navy-800 transition-colors">Pricing</a>
-      <a href="index.html#faq"       class="hover:text-navy-800 transition-colors">FAQ</a>
-      <a href="about.html"           class="hover:text-navy-800 transition-colors">About</a>
-      <a href="index.html#contact"
-         class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-lg font-semibold transition-colors">
-        Book a Free Call
-      </a>
-    </div>
-    <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Menu">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
-  </div>
-  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-gray-600">
-    <a href="index.html#features">Features</a>
-    <a href="index.html#how">How It Works</a>
-    <a href="index.html#pricing">Pricing</a>
-    <a href="index.html#faq">FAQ</a>
-    <a href="about.html">About</a>
-    <a href="index.html#contact" class="bg-emerald-500 text-white px-4 py-2 rounded-lg text-center font-semibold">Book a Free Call</a>
-  </div>
-</nav>
-
-<!-- ─── HERO ─── -->
-<section class="gradient-hero pt-32 pb-16 px-6 text-white">
-  <div class="max-w-4xl mx-auto text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-4">Terms of Service</h1>
-    <p class="text-white/70 text-lg">Effective Date: February 2026</p>
+    <h1 style="color: #ffffff;">Terms of Service</h1>
+    <p class="mt-4" style="color: rgba(255,255,255,0.6);">Effective Date: February 20, 2026 · Last Updated: February 20, 2026</p>
   </div>
 </section>
 
 <!-- ─── CONTENT ─── -->
-<section class="py-16 px-6 bg-white">
-  <div class="max-w-3xl mx-auto prose prose-lg max-w-none">
+<section class="py-16 px-6" style="background-color: var(--color-surface);">
+  <div class="max-w-3xl mx-auto">
 
-    <p class="text-gray-600 leading-relaxed mb-8">
-      These Terms of Service ("Terms") govern your use of the AI employee services provided by Huffman AI Solutions LLC ("Huffman AI," "we," "us," or "our"). By using our services, you ("Client," "you") agree to be bound by these Terms.
+    <p>
+      These Terms of Service ("Terms") govern your access to and use of the AI employee services ("Service") provided by Huffman AI Solutions LLC ("Company," "we," "us," or "our"), a North Carolina limited liability company.
+    </p>
+    <p>
+      By signing up for, accessing, or using the Service, you ("Client," "you," or "your") agree to be bound by these Terms. If you do not agree, do not use the Service.
     </p>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">1. Service Description</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">Huffman AI Solutions provides AI employee agents for recruiting firms. Our AI employees connect to your authorized email (Gmail/Outlook), calendar, and CRM systems to perform recruiting tasks on your behalf, including:</p>
-    <ul class="text-gray-600 space-y-2 mb-6">
-      <li>Email management, drafting, and sending</li>
-      <li>Interview scheduling and coordination</li>
-      <li>Candidate nurturing and follow-up</li>
-      <li>Daily briefings and reporting</li>
-      <li>CRM updates and pipeline management</li>
-      <li>Candidate research and pre-screening</li>
+    <div class="bg-bg rounded-2xl p-6 my-8 border border-rule">
+      <p style="margin: 0; font-style: italic; color: var(--color-muted);">
+        <strong style="color: var(--color-dark);">IMPORTANT:</strong> The term "AI Employee" is a marketing term used to describe our software service. The Service is a software product and does not create an employment relationship, agency relationship, or fiduciary duty between you and Huffman AI Solutions or any third party.
+      </p>
+    </div>
+
+    <h2>1. Service Description</h2>
+
+    <h3 style="color: var(--color-dark);">What We Provide</h3>
+    <p>We provide custom AI-powered services that assist small businesses with:</p>
+    <ul class="list-disc ml-6">
+      <li>Email management and response drafting</li>
+      <li>Meeting scheduling and coordination</li>
+      <li>Customer and client follow-up</li>
+      <li>Daily briefings and priority management</li>
+      <li>Research, summaries, and document preparation</li>
+      <li>Business communications and client relationship management</li>
+      <li>Any additional workflows designed during onboarding</li>
     </ul>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">2. Client Responsibilities</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">As a client, you agree to:</p>
-    <ul class="text-gray-600 space-y-2 mb-6">
-      <li>Provide accurate and complete information during onboarding</li>
-      <li>Ensure you have proper authorization to grant AI access to your email, calendar, and CRM systems</li>
-      <li>Review and approve AI-generated communications as required by your configured approval workflow</li>
-      <li>Notify us promptly of any security concerns or unauthorized access</li>
-      <li>Maintain the confidentiality of your account credentials</li>
+    <h3 style="color: var(--color-dark);">What We Do NOT Provide</h3>
+    <ul class="list-disc ml-6">
+      <li>Live video call transcription (requires third-party add-ons)</li>
+      <li>Final business decisions (human oversight required)</li>
+      <li>Legal, financial, or professional advice</li>
     </ul>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">3. Acceptable Use</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">You may not use our services to:</p>
-    <ul class="text-gray-600 space-y-2 mb-6">
-      <li>Send unsolicited bulk emails or spam</li>
-      <li>Engage in any illegal, fraudulent, or deceptive activity</li>
-      <li>Harass, threaten, or harm any individual</li>
-      <li>Violate any applicable laws, regulations, or third-party rights</li>
-      <li>Attempt to reverse-engineer, copy, or redistribute our AI systems</li>
-    </ul>
-    <p class="text-gray-600 leading-relaxed mb-6">Violation of this policy may result in immediate termination of service.</p>
+    <h3 style="color: var(--color-dark);">Technology</h3>
+    <p>The Service is powered by the OpenClaw framework (MIT license) and Anthropic Claude AI models (via API), running on Company-managed infrastructure.</p>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">4. Payment Terms</h2>
-    <ul class="text-gray-600 space-y-2 mb-4">
-      <li><strong>Monthly fee:</strong> $2,000 per month per AI employee (Solo Recruiter plan). Agency pricing varies by seat count.</li>
-      <li><strong>Billing cycle:</strong> Monthly, billed at the start of each service period</li>
-      <li><strong>Cancellation:</strong> You may cancel at any time — no contracts, no cancellation fees</li>
-      <li><strong>Partial months:</strong> No refunds are provided for partial months of service</li>
-      <li><strong>Payment methods:</strong> We accept standard business payment methods as communicated during onboarding</li>
+    <h3 style="color: var(--color-dark);">Service Limitations</h3>
+    <p>The Service uses artificial intelligence and may make errors. You are responsible for reviewing and approving all communications before they are sent. Time savings estimates are illustrative and may vary based on your usage and business volume.</p>
+
+    <h2>2. Pricing &amp; Engagement</h2>
+
+    <h3 style="color: var(--color-dark);">Custom Pricing</h3>
+    <p>
+      All engagements are custom-priced based on scope, complexity, and the structure that best fits your business. See our <a href="features.html#pricing" class="accent">engagement models</a> for an overview of available structures:
+    </p>
+    <ul class="list-disc ml-6">
+      <li><strong style="color: var(--color-dark);">Monthly Subscription:</strong> Fixed monthly fee, cancel anytime</li>
+      <li><strong style="color: var(--color-dark);">Revenue Share:</strong> Percentage of measurable revenue impact</li>
+      <li><strong style="color: var(--color-dark);">Equity Partnership:</strong> Equity stake in exchange for AI team deployment</li>
+      <li><strong style="color: var(--color-dark);">Hybrid:</strong> Custom combination of the above</li>
+    </ul>
+    <p>Specific pricing is agreed upon during your discovery call and confirmed in a written engagement agreement prior to service commencement.</p>
+
+    <h3 style="color: var(--color-dark);">Billing</h3>
+    <ul class="list-disc ml-6">
+      <li>Subscription fees are billed monthly in advance</li>
+      <li>All fees are non-refundable except as specified in the Money-Back Guarantee (Section 4)</li>
+      <li>Failed payments may result in service suspension after 5 business days</li>
+      <li>Price changes will be communicated with 30 days' advance written notice</li>
     </ul>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">5. Free Trial</h2>
-    <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6 mb-6">
-      <ul class="text-emerald-800 space-y-2 text-sm">
-        <li>✓ <strong>Duration:</strong> 2–4 weeks, determined during onboarding based on your needs</li>
-        <li>✓ <strong>Cost:</strong> $0 — completely free, including setup and configuration</li>
-        <li>✓ <strong>Obligation:</strong> None. If you don't want to continue after the trial, you owe nothing</li>
-        <li>✓ <strong>Full functionality:</strong> Trial includes complete access to all AI employee features</li>
-        <li>✓ We will notify you before the trial ends to discuss whether you'd like to continue</li>
+    <h2>3. Free Trial</h2>
+    <div class="bg-bg rounded-2xl p-6 my-4 border border-rule">
+      <ul class="list-none ml-0" style="margin-bottom: 0;">
+        <li>✓ <strong style="color: var(--color-dark);">Duration:</strong> 2–4 weeks, determined during onboarding</li>
+        <li>✓ <strong style="color: var(--color-dark);">Cost:</strong> $0 — completely free, including setup and configuration</li>
+        <li>✓ <strong style="color: var(--color-dark);">Obligation:</strong> None. If you don't want to continue, you owe nothing</li>
+        <li>✓ <strong style="color: var(--color-dark);">Full access:</strong> Complete access to all features throughout the trial</li>
       </ul>
     </div>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">6. The $500 Guarantee</h2>
-    <div class="bg-gray-50 border border-gray-200 rounded-2xl p-6 mb-6">
-      <p class="text-gray-600 text-sm leading-relaxed">
-        We guarantee you will save at least 40 hours total by the end of your free trial period. If you complete the trial and have not saved 40+ hours, you owe nothing — and we will pay you <strong>$500</strong> for your time. This guarantee is subject to the following conditions:
-      </p>
-      <ul class="text-gray-600 space-y-2 text-sm mt-3">
-        <li>You must have actively used the AI employee throughout the trial period</li>
-        <li>You must have completed the full trial duration as agreed during onboarding</li>
-        <li>Time savings are measured through mutual review of AI activity logs and client-reported hours</li>
-        <li>The $500 payment will be issued within 30 days of an approved guarantee claim</li>
+    <h2>4. Money-Back Guarantee ("$500 Guarantee")</h2>
+    <div class="bg-bg rounded-2xl p-6 my-4 border border-rule">
+      <p>If you complete your free trial and do not save at least 20 hours per week, we will: (1) waive all fees, AND (2) pay you <strong style="color: var(--color-dark);">$500</strong> as compensation for your time invested.</p>
+      <p><strong style="color: var(--color-dark);">To qualify, you must:</strong></p>
+      <ul class="list-disc ml-6">
+        <li>Complete the full trial period (minimum 2 weeks)</li>
+        <li>Use the Service at least 4 days per week during the trial</li>
+        <li>Attend weekly check-in calls with our team</li>
+        <li>Submit a written guarantee claim within 7 days of trial completion</li>
       </ul>
-      
-      <div class="mt-4 pt-4 border-t border-gray-200">
-        <p class="text-gray-700 font-semibold text-sm mb-2">How We Measure "40 Hours Saved":</p>
-        <p class="text-gray-600 text-sm leading-relaxed">
-          Time savings are calculated by tracking the AI employee's activity and comparing it to industry-standard time estimates for recruiting tasks. We count:
-        </p>
-        <ul class="text-gray-600 space-y-1 text-sm mt-2 ml-4">
-          <li>• Emails drafted, sent, and managed (avg. 5 min per email)</li>
-          <li>• Interview coordination completed (avg. 15–30 min per interview)</li>
-          <li>• Candidate follow-ups sent (avg. 10 min per follow-up)</li>
-          <li>• Candidate research and pre-screening (avg. 20 min per candidate)</li>
-          <li>• Daily briefings prepared (avg. 15 min manual preparation)</li>
-          <li>• CRM updates and data entry (avg. 10–20 min per day)</li>
-        </ul>
-        <p class="text-gray-600 text-sm leading-relaxed mt-2">
-          At the end of your trial, we provide a detailed activity report showing exactly what the AI handled and the time saved per task category. If the total falls short of 40 hours, the guarantee applies.
-        </p>
-      </div>
+      <p style="margin-bottom: 0;">Claims: email <a href="mailto:legal@huffmansolutionsai.com" class="accent">legal@huffmansolutionsai.com</a>. If approved, payment issued within 10 business days. One claim per company. The $500 payment may constitute reportable income; you are responsible for applicable tax obligations.</p>
     </div>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">7. Data Ownership</h2>
-    <p class="text-gray-600 leading-relaxed mb-6">
-      You retain full ownership of all your data at all times. Huffman AI Solutions has no ownership claim over any client data, communications, candidate information, or any other data processed through our services. See our <a href="privacy.html" class="text-emerald-600 hover:underline">Privacy Policy</a> for full details on how we handle your data.
-    </p>
-
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">8. Limitation of Liability</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">
-      To the maximum extent permitted by applicable law:
-    </p>
-    <ul class="text-gray-600 space-y-2 mb-6">
-      <li>Huffman AI Solutions shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from or related to your use of our services</li>
-      <li>Our total liability for any claim arising from these Terms or our services shall not exceed the amount you paid to us in the three (3) months preceding the claim</li>
-      <li>We are not responsible for actions taken by the AI employee that were approved by you through the approval workflow</li>
-      <li>We do not guarantee specific business outcomes, placement rates, or revenue increases</li>
+    <h2>5. Cancellation and Refunds</h2>
+    <ul class="list-disc ml-6">
+      <li><strong style="color: var(--color-dark);">By you:</strong> Cancel anytime with 30 days' written notice to <a href="mailto:support@huffmansolutionsai.com" class="accent">support@huffmansolutionsai.com</a>. No cancellation fees.</li>
+      <li><strong style="color: var(--color-dark);">By us:</strong> We may suspend or terminate your access for violations of these Terms, failed payments, or activity that poses a security or legal risk.</li>
+      <li><strong style="color: var(--color-dark);">Effect:</strong> Upon termination, all client data is permanently deleted within 90 days. You may request a data export before deletion.</li>
+      <li><strong style="color: var(--color-dark);">No refunds</strong> for partial months of paid service.</li>
     </ul>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">9. Indemnification</h2>
-    <p class="text-gray-600 leading-relaxed mb-6">
-      You agree to indemnify and hold harmless Huffman AI Solutions, its officers, employees, and agents from any claims, damages, losses, or expenses (including reasonable attorney's fees) arising from: (a) your use of our services; (b) your violation of these Terms; (c) your violation of any applicable law or third-party rights; or (d) content sent through the AI employee that you reviewed and approved.
-    </p>
+    <h2>6. Data Privacy and Security</h2>
+    <p>To provide the Service, we access and process your email, calendar, and connected business system data. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). Your data is completely isolated — never shared with other clients.</p>
+    <p>We do NOT sell your data or use it to train general-purpose AI models. Full details are in our <a href="privacy.html" class="accent">Privacy Policy</a>, incorporated into these Terms by reference.</p>
+    <p><strong style="color: var(--color-dark);">Data retention:</strong> Active client data is retained for the duration of your engagement. Cancelled accounts: data deleted within 90 days. You may request immediate deletion at any time.</p>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">10. Termination</h2>
-    <ul class="text-gray-600 space-y-2 mb-6">
-      <li><strong>By you:</strong> You may terminate your account at any time by notifying us. No cancellation fees apply.</li>
-      <li><strong>By us:</strong> We may terminate your account at any time for violation of these Terms, with notice.</li>
-      <li><strong>Effect of termination:</strong> Upon termination, all client data will be permanently deleted within 30 days. You may request a data export before deletion.</li>
-      <li><strong>Survival:</strong> Sections regarding limitation of liability, indemnification, and governing law survive termination.</li>
+    <h2>7. Your Responsibilities</h2>
+    <ul class="list-disc ml-6">
+      <li>Use the Service only for lawful business purposes</li>
+      <li>Ensure you have proper authorization to grant AI access to your email, calendar, and systems</li>
+      <li>Review AI-generated communications as required by your configured approval workflow</li>
+      <li>Maintain confidentiality of your account credentials and notify us of any unauthorized access</li>
+      <li>Not use the Service to send spam or unsolicited bulk communications</li>
+      <li>Not attempt to reverse-engineer, hack, or abuse the Service</li>
+      <li>Comply with all applicable laws and regulations in your industry and jurisdiction</li>
     </ul>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">11. Governing Law</h2>
-    <p class="text-gray-600 leading-relaxed mb-6">
-      These Terms shall be governed by and construed in accordance with the laws of the State of North Carolina, without regard to its conflict of law provisions. Any disputes arising from these Terms or our services shall be resolved in the state or federal courts located in Wake County, North Carolina.
-    </p>
+    <h2>8. Intellectual Property</h2>
+    <ul class="list-disc ml-6">
+      <li><strong style="color: var(--color-dark);">Our IP:</strong> The Service, including all software, algorithms, designs, and documentation, is owned by Huffman AI Solutions and protected by applicable law.</li>
+      <li><strong style="color: var(--color-dark);">Your IP:</strong> You retain ownership of all your business data, communications, and processes.</li>
+      <li><strong style="color: var(--color-dark);">AI-Generated Content:</strong> Content generated by the AI is owned by you once created. You are solely responsible for the accuracy and legality of AI-generated content you choose to send.</li>
+    </ul>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">12. Changes to These Terms</h2>
-    <p class="text-gray-600 leading-relaxed mb-6">
-      We may update these Terms from time to time. For material changes, we will notify active clients at least 30 days in advance via email. Continued use of our services after changes take effect constitutes acceptance of the updated Terms.
-    </p>
+    <h2>9. Disclaimers</h2>
+    <p>The Service is provided "AS IS" and "AS AVAILABLE." We do not warrant that the AI will be error-free. AI-generated content may contain mistakes or inaccuracies — you are responsible for reviewing all outputs before use.</p>
+    <p>We strive for 99%+ uptime but do not guarantee uninterrupted access.</p>
+    <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT.</p>
 
-    <h2 class="text-2xl font-extrabold text-navy-800 mt-10 mb-4">13. Contact Us</h2>
-    <div class="bg-gray-50 rounded-2xl p-6">
-      <p class="text-gray-600 text-sm">
-        <strong>Huffman AI Solutions LLC</strong><br/>
-        Raleigh, North Carolina<br/>
-        Email: <a href="mailto:jake@huffmansolutionsai.com" class="text-emerald-600 hover:underline">jake@huffmansolutionsai.com</a>
-      </p>
+    <h2>10. Limitation of Liability</h2>
+    <p>OUR TOTAL LIABILITY TO YOU FOR ANY CLAIMS ARISING FROM THESE TERMS OR THE SERVICE SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE 12 MONTHS PRECEDING THE CLAIM.</p>
+    <p>WE ARE NOT LIABLE FOR: lost profits or business opportunities, data loss, indirect or consequential damages, or errors in AI-generated content.</p>
+    <p>These limitations do not apply to our gross negligence or willful misconduct, or liability that cannot be excluded under North Carolina law.</p>
+
+    <h2>11. Indemnification</h2>
+    <p>You agree to indemnify, defend, and hold harmless Huffman AI Solutions, its officers, employees, and contractors from any claims, damages, or expenses (including attorney fees) arising from your use of the Service, your violation of these Terms, or your violation of any law or third-party rights.</p>
+
+    <h2>12. Dispute Resolution</h2>
+    <p><strong style="color: var(--color-dark);">Governing Law:</strong> These Terms are governed by the laws of the State of North Carolina, without regard to conflict-of-law principles.</p>
+    <p><strong style="color: var(--color-dark);">Arbitration:</strong> Any dispute shall be resolved through binding arbitration in Mecklenburg County, North Carolina, under the rules of the American Arbitration Association. Either party may seek injunctive relief in court to protect intellectual property or confidential information.</p>
+    <p><strong style="color: var(--color-dark);">Class Action Waiver:</strong> You agree to resolve disputes individually and waive the right to participate in class actions.</p>
+
+    <h2>13. General Provisions</h2>
+    <ul class="list-disc ml-6">
+      <li><strong style="color: var(--color-dark);">Entire Agreement:</strong> These Terms (including the Privacy Policy) constitute the entire agreement between you and Huffman AI Solutions.</li>
+      <li><strong style="color: var(--color-dark);">Amendments:</strong> We may update these Terms at any time. Material changes will be communicated via email 30 days in advance. Continued use after changes constitutes acceptance.</li>
+      <li><strong style="color: var(--color-dark);">Severability:</strong> If any provision is found unenforceable, the remaining provisions remain in effect.</li>
+      <li><strong style="color: var(--color-dark);">Assignment:</strong> You may not assign these Terms without our written consent. We may assign to a successor or affiliate.</li>
+    </ul>
+
+    <h2>14. Contact Information</h2>
+    <div class="bg-bg rounded-2xl p-6 border border-rule">
+      <p style="margin-bottom: 0;"><strong style="color: var(--color-dark);">Huffman AI Solutions LLC</strong><br/>
+      Charlotte, North Carolina<br/>
+      Legal: <a href="mailto:legal@huffmansolutionsai.com" class="accent">legal@huffmansolutionsai.com</a><br/>
+      Support: <a href="mailto:support@huffmansolutionsai.com" class="accent">support@huffmansolutionsai.com</a><br/>
+      Privacy: <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a></p>
     </div>
+
+    <p class="mt-8 text-sm" style="color: var(--color-muted);">By using the Service, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.</p>
 
   </div>
 </section>
 
 <!-- ─── FOOTER ─── -->
-<footer class="bg-navy-900 text-white/50 py-10 px-6">
-  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-    <div class="flex items-center gap-2 font-bold text-white/80">
-      <span class="text-emerald-400">⚡</span> Huffman AI Solutions
+<footer class="pt-10 px-6" style="background: var(--color-dark);">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm mb-6" style="color: rgba(255,255,255,0.5);">
+      <div class="flex items-center gap-3 font-display font-bold" style="color: rgba(255,255,255,0.8);">
+        <img src="huffman-ai-secondary-logo.jpg" alt="Huffman AI Solutions" class="h-6 w-auto" />
+        <span>Huffman AI Solutions</span>
+      </div>
+      <div class="flex gap-6">
+        <a href="features.html" class="hover:text-white transition-colors" style="color: rgba(255,255,255,0.5);">Features</a>
+        <a href="features.html#pricing" class="hover:text-white transition-colors" style="color: rgba(255,255,255,0.5);">Pricing</a>
+        <a href="about.html" class="hover:text-white transition-colors" style="color: rgba(255,255,255,0.5);">About</a>
+        <a href="privacy.html" class="hover:text-white transition-colors" style="color: rgba(255,255,255,0.5);">Privacy</a>
+        <a href="terms.html" class="hover:text-white transition-colors" style="color: rgba(255,255,255,0.5);">Terms</a>
+      </div>
     </div>
-    <div class="flex gap-6">
-      <a href="index.html#features" class="hover:text-white transition-colors">Features</a>
-      <a href="index.html#pricing"  class="hover:text-white transition-colors">Pricing</a>
-      <a href="about.html"          class="hover:text-white transition-colors">About</a>
-      <a href="privacy.html"        class="hover:text-white transition-colors">Privacy</a>
-      <a href="terms.html"          class="hover:text-white transition-colors">Terms</a>
+    <div class="text-center py-8 border-t" style="border-color: rgba(255,255,255,0.1);">
+      <a href="features.html#contact"
+         class="inline-block bg-gold text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:opacity-90 mb-6">
+        Book a Free Call
+      </a>
+      <p class="text-xs" style="color: rgba(255,255,255,0.3);">© 2026 Huffman AI Solutions LLC · Charlotte, North Carolina</p>
     </div>
-    <p>© 2025 Huffman AI Solutions LLC · Raleigh, NC</p>
   </div>
 </footer>
 
-<script>
-  document.getElementById('menu-btn').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
-</script>
 </body>
 </html>
