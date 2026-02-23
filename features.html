@@ -83,7 +83,7 @@
 
     h1 { font-size: clamp(3rem, 8vw, 5rem); }
     h2 { font-size: clamp(2.4rem, 6vw, 3.5rem); }
-    h3 { font-size: clamp(1.4rem, 3vw, 2rem); }
+    h3 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
 
     p {
       font-family: var(--font-body);
@@ -106,6 +106,35 @@
   </style>
 </head>
 <body>
+
+<!-- ─── NAVIGATION ─── -->
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); transition: all 0.3s;">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 md:h-10 w-auto" />
+      <span class="font-display font-semibold text-xl md:text-2xl" style="color: var(--color-ink);">Huffman AI Solutions</span>
+    </a>
+    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color: var(--color-muted);">
+      <a href="index.html" class="hover:text-ink transition-colors">Home</a>
+      <a href="features.html" class="text-ink font-semibold">Learn More</a>
+      <a href="about.html" class="hover:text-ink transition-colors">About</a>
+      <a href="#contact" class="px-4 py-2 rounded-lg font-display font-semibold transition-all hover:opacity-90" style="background-color: var(--color-gold); color: var(--color-surface);">
+        Book a Call
+      </a>
+    </div>
+    <button id="menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4 px-6 flex flex-col gap-4 font-display text-base font-medium" style="background-color: var(--color-bg); color: var(--color-muted);">
+    <a href="index.html" class="block py-2 hover:text-ink">Home</a>
+    <a href="features.html" class="block py-2 text-ink font-semibold">Learn More</a>
+    <a href="about.html" class="block py-2 hover:text-ink">About</a>
+    <a href="#contact" class="block py-2 px-4 rounded-lg text-center font-semibold mt-2" style="background-color: var(--color-gold); color: var(--color-surface);">Book a Call</a>
+  </div>
+</nav>
 
 <!-- ─── HERO ─── -->
 <section id="hero" class="gradient-hero pt-24 pb-20 px-6 text-white">
@@ -192,7 +221,7 @@
 
       <!-- Pain points -->
       <div class="bg-white rounded-2xl p-8 border border-rule shadow-sm">
-        <h3 class="text-xl mb-6" style="color: var(--color-dark);">Without an AI Employee</h3>
+        <h3 class="mb-6" style="color: var(--color-dark);">Without an AI Employee</h3>
         <ul class="space-y-4">
           <li class="flex items-start gap-3">
             <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
@@ -223,7 +252,7 @@
 
       <!-- With AI -->
       <div class="bg-dark rounded-2xl p-8 border border-gold/20 shadow-sm">
-        <h3 class="text-xl mb-6 text-white">With an AI Employee</h3>
+        <h3 class="mb-6 text-white">With an AI Employee</h3>
         <ul class="space-y-4">
           <li class="flex items-start gap-3">
             <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
@@ -374,7 +403,7 @@
       <div class="bg-red-900/20 border-2 border-red-500/30 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-6">
           <span class="text-4xl">😰</span>
-          <h3 class="text-2xl font-display text-white">Before: Chaos Mode</h3>
+          <h3 class="font-display text-white">Before: Chaos Mode</h3>
         </div>
         <div class="space-y-4 text-white/90">
           <div>
@@ -408,7 +437,7 @@
       <div class="bg-gold/20 border-2 border-gold/30 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-6">
           <span class="text-4xl">😌</span>
-          <h3 class="text-2xl font-display text-white">After: Calm &amp; Focused</h3>
+          <h3 class="font-display text-white">After: Calm &amp; Focused</h3>
         </div>
         <div class="space-y-4 text-white/90">
           <div>
@@ -668,6 +697,11 @@
 
 <!-- ─── JAVASCRIPT ─── -->
 <script>
+  // Mobile menu toggle
+  document.getElementById('menu-btn').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+
   // FAQ accordion
   document.querySelectorAll('.faq-btn').forEach(btn => {
     btn.addEventListener('click', () => {
