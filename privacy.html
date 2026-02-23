@@ -49,17 +49,41 @@
       --font-body: 'IBM Plex Sans', system-ui, sans-serif;
       --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
     }
-    body { background-color: var(--color-bg); color: var(--color-ink); font-family: var(--font-body); font-weight: 300; font-size: 1rem; line-height: 1.8; }
-    h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.08; letter-spacing: -0.01em; color: var(--color-ink); }
-    h1 { font-size: clamp(3rem, 8vw, 5rem); }
-    h2 { font-size: clamp(2.4rem, 6vw, 3.5rem); margin-top: 3rem; margin-bottom: 1.25rem; }
-    h3 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-top: 2rem; margin-bottom: 0.75rem; }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-ink);
+      font-family: var(--font-body);
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: var(--color-ink);
+    }
+
+    h1 { font-size: clamp(4rem, 10vw, 7rem); }
+    h2 { font-size: clamp(3rem, 7vw, 5rem); margin-top: 3rem; margin-bottom: 1.25rem; }
+    h3 { font-size: clamp(2.2rem, 5vw, 3.5rem); margin-top: 2rem; margin-bottom: 0.75rem; }
+
     p { color: var(--color-muted); margin-bottom: 1.25rem; }
     ul { color: var(--color-muted); margin-bottom: 1.25rem; }
     li { margin-bottom: 0.5rem; }
+
     a.accent { color: var(--color-gold); }
     a.accent:hover { text-decoration: underline; }
     nav a { font-family: var(--font-display); }
+
+    .content-strong { color: var(--color-dark); font-weight: 600; font-family: var(--font-body); }
+
+    /* TOC styles */
+    .toc-link { color: var(--color-gold); font-family: var(--font-body); font-size: 0.9rem; }
+    .toc-link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -97,7 +121,7 @@
 <section class="pt-32 pb-16 px-6" style="background: var(--color-dark);">
   <div class="max-w-4xl mx-auto">
     <h1 style="color: #ffffff;">Privacy Policy</h1>
-    <p class="mt-4" style="color: rgba(255,255,255,0.6);">Effective Date: February 20, 2026 · Last Updated: February 20, 2026</p>
+    <p class="mt-4" style="color: rgba(255,255,255,0.6); font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;">Effective Date: February 20, 2026 &nbsp;·&nbsp; Last Updated: February 20, 2026</p>
   </div>
 </section>
 
@@ -105,30 +129,69 @@
 <section class="py-16 px-6" style="background-color: var(--color-surface);">
   <div class="max-w-3xl mx-auto">
 
+    <!-- Intro -->
     <p>
       Huffman AI Solutions LLC ("Company," "we," "us," or "our") provides AI-powered business assistance services ("Service") to small businesses across any industry.
     </p>
-    <p>
-      This Privacy Policy explains what personal information we collect, how we use and protect it, your rights, and how we comply with privacy laws.
-    </p>
-    <p><strong style="color: var(--color-dark);">By using the Service, you consent to the practices described in this Privacy Policy.</strong></p>
 
+    <p>This Privacy Policy explains:</p>
+    <ul class="list-disc ml-6">
+      <li>What personal information we collect</li>
+      <li>How we use and protect that information</li>
+      <li>Your rights regarding your information</li>
+      <li>How we comply with privacy laws</li>
+    </ul>
+
+    <p><strong class="content-strong">By using the Service, you consent to the practices described in this Privacy Policy.</strong></p>
+    <p>If you do not agree with this Privacy Policy, do not use the Service.</p>
+
+    <!-- Company Info Box -->
     <div class="bg-bg rounded-2xl p-6 my-8 border border-rule">
-      <h3 style="color: var(--color-dark); margin-top: 0;">Company Information</h3>
-      <p style="margin-bottom: 0;">Huffman AI Solutions LLC<br/>Charlotte, North Carolina<br/>
-      Contact: <a href="mailto:jake@huffmansolutionsai.com" class="accent">jake@huffmansolutionsai.com</a></p>
+      <h3 style="color: var(--color-dark); margin-top: 0; font-size: 1.4rem;">Company Information</h3>
+      <p style="margin-bottom: 0; font-family: var(--font-body);">
+        <strong class="content-strong">Huffman AI Solutions LLC</strong><br/>
+        Charlotte, North Carolina<br/>
+        Privacy: <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a><br/>
+        General: <a href="mailto:jakehuffman@huffmansolutionsai.com" class="accent">jakehuffman@huffmansolutionsai.com</a><br/>
+        Website: <a href="https://huffmansolutionsai.com" class="accent">huffmansolutionsai.com</a>
+      </p>
     </div>
 
-    <h2>1. Information We Collect</h2>
+    <!-- Table of Contents -->
+    <div class="bg-bg rounded-2xl p-6 my-8 border border-rule">
+      <p style="font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-gold); margin-bottom: 1rem;">Contents</p>
+      <ol class="list-decimal ml-6 space-y-1" style="color: var(--color-muted); font-size: 0.9rem;">
+        <li><a href="#section-1" class="toc-link">Information We Collect</a></li>
+        <li><a href="#section-2" class="toc-link">How We Use Your Information</a></li>
+        <li><a href="#section-3" class="toc-link">How We Share Your Information</a></li>
+        <li><a href="#section-4" class="toc-link">Data Security</a></li>
+        <li><a href="#section-5" class="toc-link">Data Retention</a></li>
+        <li><a href="#section-6" class="toc-link">Client Controls</a></li>
+        <li><a href="#section-7" class="toc-link">Your Privacy Rights</a></li>
+        <li><a href="#section-8" class="toc-link">International Data Transfers</a></li>
+        <li><a href="#section-9" class="toc-link">Children's Privacy</a></li>
+        <li><a href="#section-10" class="toc-link">Cookies and Tracking Technologies</a></li>
+        <li><a href="#section-11" class="toc-link">Third-Party Links</a></li>
+        <li><a href="#section-12" class="toc-link">Data Breach Notification</a></li>
+        <li><a href="#section-13" class="toc-link">Changes to This Policy</a></li>
+        <li><a href="#section-14" class="toc-link">Contact Us</a></li>
+        <li><a href="#section-15" class="toc-link">Supervisory Authority (EU/UK)</a></li>
+      </ol>
+    </div>
 
-    <h3 style="color: var(--color-dark);">Information You Provide Directly</h3>
-    <p><strong style="color: var(--color-dark);">Account Information:</strong></p>
+    <!-- SECTION 1 -->
+    <h2 id="section-1">1. Information We Collect</h2>
+
+    <h3 style="color: var(--color-dark);">1.1 Information You Provide Directly</h3>
+
+    <p><strong class="content-strong">Account Information:</strong></p>
     <ul class="list-disc ml-6">
       <li>Name, email address, phone number</li>
       <li>Company name and business details</li>
       <li>Payment information (processed by third-party payment processor)</li>
     </ul>
-    <p><strong style="color: var(--color-dark);">Service Configuration:</strong></p>
+
+    <p><strong class="content-strong">Service Configuration:</strong></p>
     <ul class="list-disc ml-6">
       <li>Email account credentials (via OAuth — we do not store your password)</li>
       <li>Calendar access permissions</li>
@@ -136,113 +199,244 @@
       <li>Communication preferences and workflow settings</li>
     </ul>
 
-    <h3 style="color: var(--color-dark);">Information Collected Through the Service</h3>
-    <p><strong style="color: var(--color-dark);">Email Data:</strong> Email messages (subject, body, attachments, sender, recipients, timestamps), metadata, and drafts.</p>
-    <p><strong style="color: var(--color-dark);">Calendar Data:</strong> Calendar events, attendees, availability, and scheduling preferences.</p>
-    <p><strong style="color: var(--color-dark);">Business & Client Data:</strong> Client and customer records, communication history, contact details, and any other data your business systems contain that are connected to the Service.</p>
-    <p><strong style="color: var(--color-dark);">Usage Data:</strong> Service usage patterns, error logs, diagnostic information, and performance metrics.</p>
+    <h3 style="color: var(--color-dark);">1.2 Information Collected Automatically Through the Service</h3>
 
-    <h3 style="color: var(--color-dark);">What We Do NOT Collect</h3>
+    <p><strong class="content-strong">Email Data:</strong> Email messages (subject, body, attachments, sender, recipients, timestamps), email metadata (folder, labels, read/unread status), and draft emails created by you or the AI.</p>
+
+    <p><strong class="content-strong">Calendar Data:</strong> Calendar events (title, attendees, location, time, description), availability and scheduling preferences.</p>
+
+    <p><strong class="content-strong">Business & Client Data:</strong> Client and customer records, communication history, contact information, business data from connected systems, and any other information your business systems contain that are connected to the Service.</p>
+
+    <p><strong class="content-strong">Usage Data:</strong> Service usage patterns (features used, frequency, duration), error logs and diagnostic information, and performance metrics (time saved, tasks completed).</p>
+
+    <h3 style="color: var(--color-dark);">1.3 Information We Do NOT Collect</h3>
     <ul class="list-disc ml-6">
       <li>We do NOT record phone calls or video meetings (unless you add a third-party integration)</li>
       <li>We do NOT track your location</li>
-      <li>We do NOT access files outside of your connected email and calendar</li>
+      <li>We do NOT access files outside of your connected email, calendar, and explicitly authorized business systems</li>
     </ul>
 
-    <h2>2. How We Use Your Information</h2>
+    <!-- SECTION 2 -->
+    <h2 id="section-2">2. How We Use Your Information</h2>
 
-    <h3 style="color: var(--color-dark);">To Provide the Service</h3>
+    <h3 style="color: var(--color-dark);">2.1 To Provide the Service</h3>
     <ul class="list-disc ml-6">
-      <li><strong style="color: var(--color-dark);">Email &amp; Communication Management:</strong> Read, categorize, and draft responses</li>
-      <li><strong style="color: var(--color-dark);">Scheduling:</strong> Coordinate meetings and manage calendar availability</li>
-      <li><strong style="color: var(--color-dark);">Follow-Up &amp; Outreach:</strong> Send follow-ups and manage communication cadences</li>
-      <li><strong style="color: var(--color-dark);">Daily Briefings:</strong> Summarize your schedule, priorities, and action items</li>
-      <li><strong style="color: var(--color-dark);">Style Training:</strong> Train the AI to match your communication style (using your data only — never shared with other clients)</li>
+      <li><strong class="content-strong">Email &amp; Communication Management:</strong> Read, categorize, and draft responses to emails</li>
+      <li><strong class="content-strong">Scheduling:</strong> Coordinate meetings and manage calendar availability</li>
+      <li><strong class="content-strong">Follow-Up &amp; Outreach:</strong> Send follow-ups and manage communication cadences</li>
+      <li><strong class="content-strong">Daily Briefings:</strong> Summarize your schedule, priorities, and urgent action items</li>
+      <li><strong class="content-strong">Style Training:</strong> Train the AI to match your communication style (using your data only — never shared with other clients)</li>
     </ul>
 
-    <h3 style="color: var(--color-dark);">To Improve the Service</h3>
+    <h3 style="color: var(--color-dark);">2.2 To Improve the Service</h3>
     <ul class="list-disc ml-6">
       <li>Analyze usage patterns to improve features (anonymized and aggregated)</li>
       <li>Debug errors and optimize performance</li>
       <li>Develop new capabilities based on user needs</li>
     </ul>
 
+    <h3 style="color: var(--color-dark);">2.3 To Communicate With You</h3>
+    <ul class="list-disc ml-6">
+      <li>Send service updates, feature announcements, and maintenance notices</li>
+      <li>Provide customer support</li>
+      <li>Send billing and payment notifications</li>
+      <li>Request feedback and conduct user research (opt-in only)</li>
+    </ul>
+
+    <h3 style="color: var(--color-dark);">2.4 To Comply With Legal Obligations</h3>
+    <ul class="list-disc ml-6">
+      <li>Respond to subpoenas, court orders, or legal processes</li>
+      <li>Investigate fraud, security incidents, or violations of our Terms of Service</li>
+      <li>Comply with data protection laws and regulations</li>
+    </ul>
+
     <div class="bg-bg rounded-2xl p-6 my-6 border border-rule">
-      <h3 style="color: var(--color-dark); margin-top: 0;">What We Never Do</h3>
-      <ul class="list-none ml-0" style="margin-bottom: 0;">
-        <li>❌ <strong style="color: var(--color-dark);">Never sell your data</strong> to third parties</li>
-        <li>❌ <strong style="color: var(--color-dark);">Never use your data to train general AI models</strong> — your data stays completely private</li>
-        <li>❌ <strong style="color: var(--color-dark);">Never share your business data</strong> with other clients or external parties</li>
-        <li>❌ <strong style="color: var(--color-dark);">Never use your data for advertising</strong></li>
+      <h3 style="color: var(--color-dark); margin-top: 0; font-size: 1.4rem;">2.5 What We Never Do With Your Data</h3>
+      <ul class="list-none ml-0" style="margin-bottom: 0; font-family: var(--font-body);">
+        <li class="mb-2">❌ <strong class="content-strong">We do NOT sell your data</strong> to third parties</li>
+        <li class="mb-2">❌ <strong class="content-strong">We do NOT use your data to train general-purpose AI models</strong> — your data stays completely private</li>
+        <li class="mb-2">❌ <strong class="content-strong">We do NOT share your business data</strong> with other clients or external parties</li>
+        <li>❌ <strong class="content-strong">We do NOT use your data for targeted advertising</strong></li>
       </ul>
     </div>
 
-    <h2>3. How We Share Your Information</h2>
+    <!-- SECTION 3 -->
+    <h2 id="section-3">3. How We Share Your Information</h2>
 
-    <h3 style="color: var(--color-dark);">Service Providers</h3>
-    <p><strong style="color: var(--color-dark);">Anthropic (Claude API):</strong> We send content and context to Anthropic's Claude AI to generate responses. Under Anthropic's <a href="https://www.anthropic.com/legal/privacy" class="accent" target="_blank" rel="noopener">data policy</a>, API-tier data is not used to train their models.</p>
-    <p><strong style="color: var(--color-dark);">Hosting &amp; Infrastructure:</strong> Cloud providers for data storage and processing. All providers are contractually required to protect your data.</p>
-    <p><strong style="color: var(--color-dark);">Payment Processors:</strong> Handle billing only — they receive no business or client data.</p>
+    <h3 style="color: var(--color-dark);">3.1 Service Providers</h3>
 
-    <h3 style="color: var(--color-dark);">Legal Requirements</h3>
-    <p>We may disclose information if required by valid court orders, subpoenas, law enforcement, or regulatory agencies.</p>
+    <p><strong class="content-strong">Anthropic (Claude API):</strong> We send content and context to Anthropic's Claude AI to generate responses. Under Anthropic's <a href="https://www.anthropic.com/legal/privacy" class="accent" target="_blank" rel="noopener">data policy</a>, API-tier data is not used to train their models.</p>
 
-    <h3 style="color: var(--color-dark);">Business Transfers</h3>
-    <p>If Huffman AI Solutions is acquired or merges, your information may transfer to the new owner. We will notify you before your information becomes subject to a different privacy policy.</p>
+    <p><strong class="content-strong">Hosting &amp; Infrastructure:</strong> Cloud hosting providers for data storage and processing. All providers are contractually required to protect your data and use it only for service delivery.</p>
 
-    <h2>4. Data Security</h2>
+    <p><strong class="content-strong">Payment Processors:</strong> Handle billing only (we do not store full credit card numbers). Payment processors do NOT receive your business or client data.</p>
+
+    <h3 style="color: var(--color-dark);">3.2 Legal Requirements</h3>
+    <p>We may disclose information if required by valid court orders, subpoenas, or legal processes; requests from law enforcement or regulatory agencies; or investigation of fraud, security breaches, or Terms of Service violations.</p>
+
+    <h3 style="color: var(--color-dark);">3.3 Business Transfers</h3>
+    <p>If Huffman AI Solutions is acquired, merged, or sells assets, your information may be transferred to the new owner. We will notify you before your information becomes subject to a different privacy policy.</p>
+
+    <h3 style="color: var(--color-dark);">3.4 With Your Consent</h3>
+    <p>We may share information with third parties when you explicitly authorize us to do so (e.g., integrating with your CRM or other business tools).</p>
+
+    <!-- SECTION 4 -->
+    <h2 id="section-4">4. Data Security</h2>
+
+    <h3 style="color: var(--color-dark);">4.1 Security Measures</h3>
     <ul class="list-disc ml-6">
-      <li><strong style="color: var(--color-dark);">Encryption in Transit:</strong> TLS 1.3 for all data transmitted over the internet</li>
-      <li><strong style="color: var(--color-dark);">Encryption at Rest:</strong> AES-256 encryption for all stored data</li>
-      <li><strong style="color: var(--color-dark);">Client Isolation:</strong> Each client's data is completely isolated — never mixed with or accessible to other clients</li>
-      <li><strong style="color: var(--color-dark);">Access Controls:</strong> Role-based restrictions; no standing access to client data</li>
-      <li><strong style="color: var(--color-dark);">Regular Audits:</strong> Periodic security reviews and vulnerability assessments</li>
-      <li><strong style="color: var(--color-dark);">OAuth Authentication:</strong> We do not store your email or calendar passwords</li>
-    </ul>
-    <p>No system is 100% secure. While we take reasonable measures to protect your data, we cannot guarantee absolute security.</p>
-
-    <h2>5. Data Retention</h2>
-    <ul class="list-disc ml-6">
-      <li><strong style="color: var(--color-dark);">Active accounts:</strong> Retained for as long as your account is active</li>
-      <li><strong style="color: var(--color-dark);">Cancelled accounts:</strong> Data deleted within 90 days of cancellation</li>
-      <li><strong style="color: var(--color-dark);">On request:</strong> Full data export or immediate deletion available at any time</li>
-      <li><strong style="color: var(--color-dark);">Legal retention:</strong> Certain data may be retained longer if required by law</li>
-    </ul>
-
-    <h2>6. Client Controls</h2>
-    <ul class="list-disc ml-6">
-      <li><strong style="color: var(--color-dark);">Approval workflows:</strong> Review and approve sensitive communications before they're sent</li>
-      <li><strong style="color: var(--color-dark);">Instant revocation:</strong> Revoke AI access to your email, calendar, or tools at any time</li>
-      <li><strong style="color: var(--color-dark);">Audit logs:</strong> Full log of every AI action is available on request</li>
-      <li><strong style="color: var(--color-dark);">Data ownership:</strong> You own all of your data — Huffman AI has no ownership claim</li>
+      <li><strong class="content-strong">Encryption in Transit:</strong> TLS 1.3 for all data transmitted over the internet</li>
+      <li><strong class="content-strong">Encryption at Rest:</strong> AES-256 encryption for all stored data</li>
+      <li><strong class="content-strong">Client Isolation:</strong> Each client's data is completely isolated — never mixed with or accessible to other clients</li>
+      <li><strong class="content-strong">Access Controls:</strong> Role-based access restrictions; no standing access to client data by Company personnel</li>
+      <li><strong class="content-strong">Regular Audits:</strong> Periodic security reviews and vulnerability assessments</li>
+      <li><strong class="content-strong">OAuth Authentication:</strong> We do not store your email or calendar passwords</li>
     </ul>
 
-    <h2>7. Your Privacy Rights (GDPR &amp; CCPA)</h2>
+    <h3 style="color: var(--color-dark);">4.2 Your Responsibility</h3>
+    <p>You are responsible for keeping your login credentials confidential, using strong and unique passwords, and notifying us immediately of any unauthorized access.</p>
+
+    <h3 style="color: var(--color-dark);">4.3 No Absolute Security</h3>
+    <p><strong class="content-strong">No system is 100% secure.</strong> While we take reasonable measures to protect your data, we cannot guarantee absolute security. You use the Service at your own risk.</p>
+
+    <!-- SECTION 5 -->
+    <h2 id="section-5">5. Data Retention</h2>
+
+    <ul class="list-disc ml-6">
+      <li><strong class="content-strong">Active accounts:</strong> We retain your data for as long as your account is active and as necessary to provide the Service.</li>
+      <li><strong class="content-strong">Cancelled accounts:</strong> Your data is deleted within <strong class="content-strong">90 days</strong> of cancellation. Backup copies are deleted within 30 days after the initial deletion.</li>
+      <li><strong class="content-strong">On request:</strong> You may request immediate deletion by emailing <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a>.</li>
+      <li><strong class="content-strong">Legal retention:</strong> We may retain certain data longer if required by law (e.g., tax records, dispute resolution, fraud prevention).</li>
+      <li><strong class="content-strong">Anonymized data:</strong> We may retain anonymized, aggregated data indefinitely for analytics and service improvement.</li>
+    </ul>
+
+    <!-- SECTION 6 -->
+    <h2 id="section-6">6. Client Controls</h2>
+
+    <ul class="list-disc ml-6">
+      <li><strong class="content-strong">Approval workflows:</strong> Review and approve sensitive AI-generated communications before they are sent</li>
+      <li><strong class="content-strong">Instant revocation:</strong> Revoke AI access to your email, calendar, or tools at any time</li>
+      <li><strong class="content-strong">Audit logs:</strong> Full log of every AI action is available on request</li>
+      <li><strong class="content-strong">Data ownership:</strong> You own all of your data — Huffman AI Solutions has no ownership claim over your business information</li>
+    </ul>
+
+    <!-- SECTION 7 -->
+    <h2 id="section-7">7. Your Privacy Rights</h2>
+
     <p>Regardless of your location, we extend the following rights to all clients:</p>
+
+    <h3 style="color: var(--color-dark);">7.1 Access and Portability</h3>
     <ul class="list-disc ml-6">
-      <li><strong style="color: var(--color-dark);">Right to access:</strong> Request a copy of all personal data we hold about you</li>
-      <li><strong style="color: var(--color-dark);">Right to correction:</strong> Request correction of inaccurate data</li>
-      <li><strong style="color: var(--color-dark);">Right to deletion:</strong> Request deletion of your personal data</li>
-      <li><strong style="color: var(--color-dark);">Right to portability:</strong> Receive your data in a structured, machine-readable format</li>
-      <li><strong style="color: var(--color-dark);">Right to object:</strong> Object to certain data processing activities</li>
+      <li>Request a copy of the personal information we hold about you</li>
+      <li>Export your data in a machine-readable format (e.g., JSON, CSV)</li>
     </ul>
-    <p>To exercise any of these rights, contact us at <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a>. A Data Processing Agreement (DPA) is available on request for EU clients.</p>
 
-    <h2>8. Cookies</h2>
-    <p>Our website uses only essential cookies required for basic site functionality. We do not use any tracking, analytics, or advertising cookies. If this changes, we will update this policy and notify users.</p>
+    <h3 style="color: var(--color-dark);">7.2 Correction and Deletion</h3>
+    <ul class="list-disc ml-6">
+      <li>Correct inaccurate or incomplete information</li>
+      <li>Request deletion of your personal information (subject to legal retention requirements)</li>
+    </ul>
 
-    <h2>9. Children's Privacy</h2>
-    <p>The Service is not intended for individuals under 18 years of age. We do not knowingly collect information from minors.</p>
+    <h3 style="color: var(--color-dark);">7.3 Opt-Out and Restriction</h3>
+    <ul class="list-disc ml-6">
+      <li>Opt out of marketing emails (click "unsubscribe" or email us)</li>
+      <li>Restrict certain data processing activities (may limit Service functionality)</li>
+      <li>Withdraw consent for data processing (by cancelling your account)</li>
+    </ul>
 
-    <h2>10. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. For material changes, we will notify active clients at least 30 days in advance via email. The latest version will always be available on this page.</p>
+    <h3 style="color: var(--color-dark);">7.4 How to Exercise Your Rights</h3>
+    <p>Email your request to: <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a></p>
+    <p>We will respond within <strong class="content-strong">30 days</strong> (or as required by applicable law). A Data Processing Agreement (DPA) is available on request for EU clients.</p>
 
-    <h2>11. Contact Us</h2>
+    <!-- SECTION 8 -->
+    <h2 id="section-8">8. International Data Transfers</h2>
+
+    <h3 style="color: var(--color-dark);">8.1 Data Storage Location</h3>
+    <p>Your data is primarily stored in the United States.</p>
+
+    <h3 style="color: var(--color-dark);">8.2 GDPR Compliance (European Users)</h3>
+    <p>If you are located in the European Economic Area (EEA) or United Kingdom:</p>
+    <ul class="list-disc ml-6">
+      <li>We process your data under <strong class="content-strong">legitimate business interest</strong> (providing the Service you requested)</li>
+      <li>You have additional rights under GDPR (see Section 7)</li>
+      <li>Data transfers from the EEA to the US are protected by standard contractual clauses</li>
+    </ul>
+
+    <h3 style="color: var(--color-dark);">8.3 CCPA Compliance (California Users)</h3>
+    <p>If you are a California resident:</p>
+    <ul class="list-disc ml-6">
+      <li>You have the right to know what personal information we collect and how we use it</li>
+      <li>You have the right to request deletion of your personal information</li>
+      <li>We do NOT sell your personal information</li>
+      <li>You may exercise your rights by emailing <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a></li>
+    </ul>
+
+    <!-- SECTION 9 -->
+    <h2 id="section-9">9. Children's Privacy</h2>
+
+    <p>The Service is NOT intended for individuals under 18 years of age. We do not knowingly collect personal information from children.</p>
+    <p>If we discover that we have collected information from a child under 18, we will delete it immediately. If you believe we may have collected information from a minor, please contact us at <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a>.</p>
+
+    <!-- SECTION 10 -->
+    <h2 id="section-10">10. Cookies and Tracking Technologies</h2>
+
+    <h3 style="color: var(--color-dark);">10.1 What We Use</h3>
+    <p>Our website uses only:</p>
+    <ul class="list-disc ml-6">
+      <li><strong class="content-strong">Essential Cookies:</strong> Required for login, security, and basic site functionality</li>
+    </ul>
+    <p>We do NOT use analytics, advertising, or tracking cookies.</p>
+
+    <h3 style="color: var(--color-dark);">10.2 Your Choices</h3>
+    <p>Most browsers allow you to block or delete cookies and set preferences for which cookies to allow. Note: Disabling essential cookies may prevent you from using certain features of the Service.</p>
+    <p>If our cookie usage changes, we will update this policy and notify active users.</p>
+
+    <!-- SECTION 11 -->
+    <h2 id="section-11">11. Third-Party Links</h2>
+
+    <p>Our Service or website may contain links to third-party websites (e.g., Anthropic, CRM providers, scheduling tools).</p>
+    <p><strong class="content-strong">We are not responsible for the privacy practices of third-party websites.</strong> Please review their privacy policies before providing any information to third parties.</p>
+
+    <!-- SECTION 12 -->
+    <h2 id="section-12">12. Data Breach Notification</h2>
+
+    <p>If we experience a data breach that compromises your personal information, we will:</p>
+    <ul class="list-disc ml-6">
+      <li>Notify affected users within <strong class="content-strong">72 hours</strong> of discovering the breach (where required by law)</li>
+      <li>Provide details about the breach and the steps we are taking to address it</li>
+      <li>Recommend actions you can take to protect yourself</li>
+    </ul>
+
+    <!-- SECTION 13 -->
+    <h2 id="section-13">13. Changes to This Privacy Policy</h2>
+
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.</p>
+    <p><strong class="content-strong">Material changes</strong> will be communicated via email at least <strong class="content-strong">30 days in advance</strong>.</p>
+    <p>Continued use of the Service after changes take effect constitutes acceptance of the updated Privacy Policy.</p>
+
+    <!-- SECTION 14 -->
+    <h2 id="section-14">14. Contact Us</h2>
+
     <div class="bg-bg rounded-2xl p-6 border border-rule">
-      <p style="margin-bottom: 0;"><strong style="color: var(--color-dark);">Huffman AI Solutions LLC</strong><br/>
-      Charlotte, North Carolina<br/>
-      Privacy: <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a><br/>
-      General: <a href="mailto:jakehuffman@huffmansolutionsai.com" class="accent">jakehuffman@huffmansolutionsai.com</a></p>
+      <p style="margin-bottom: 0; font-family: var(--font-body);">
+        <strong class="content-strong">Huffman AI Solutions LLC</strong><br/>
+        Charlotte, North Carolina<br/><br/>
+        Privacy inquiries: <a href="mailto:data-privacy@huffmansolutionsai.com" class="accent">data-privacy@huffmansolutionsai.com</a><br/>
+        General inquiries: <a href="mailto:jakehuffman@huffmansolutionsai.com" class="accent">jakehuffman@huffmansolutionsai.com</a><br/>
+        Legal matters: <a href="mailto:legal@huffmansolutionsai.com" class="accent">legal@huffmansolutionsai.com</a><br/>
+        Website: <a href="https://huffmansolutionsai.com" class="accent">huffmansolutionsai.com</a>
+      </p>
+    </div>
+
+    <!-- SECTION 15 -->
+    <h2 id="section-15">15. Supervisory Authority (EU/UK Users)</h2>
+
+    <p>If you are located in the European Economic Area or United Kingdom and believe we have not adequately addressed your privacy concerns, you have the right to lodge a complaint with your local data protection authority.</p>
+
+    <!-- Closing -->
+    <div class="mt-12 pt-8 border-t" style="border-color: var(--color-rule);">
+      <p class="text-sm" style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-muted);">Last Updated: February 20, 2026 &nbsp;·&nbsp; Effective Date: February 20, 2026</p>
+      <p><strong class="content-strong">By using the Service, you acknowledge that you have read and understood this Privacy Policy.</strong></p>
     </div>
 
   </div>
