@@ -4,209 +4,169 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About – Huffman AI Solutions</title>
-  <meta name="description" content="Huffman AI Solutions builds and operates complete AI-powered business infrastructure for small businesses — as co-builders and equity partners. We grow when you grow." />
-  
-  <!-- Open Graph / Social Media -->
+  <meta name="description" content="Huffman AI Solutions builds AI employees for home service businesses — plumbers, electricians, HVAC, roofers, cleaners, landscapers, and handymen. Based in Charlotte, NC." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://huffmansolutionsai.com/about.html" />
+  <meta property="og:url" content="https://huffmanai.com/about.html" />
   <meta property="og:title" content="About – Huffman AI Solutions" />
-  <meta property="og:description" content="We're an AI agency that functions like a venture capital firm — instead of money, we provide business infrastructure. Co-builders, not vendors." />
+  <meta property="og:description" content="We build AI employees for home service businesses. We don't give you software — we give you workers. Based in Charlotte, NC." />
   <meta property="og:image" content="huffman-ai-primary-logo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  
-  <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="huffman-ai-secondary-logo.jpg" />
   <link rel="apple-touch-icon" href="huffman-ai-secondary-logo.jpg" />
-  
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            ink: '#0d0d0d',
-            dark: '#1a1a2e',
-            gold: '#c8a96e',
-            muted: '#6b6560',
-            rule: '#d4cfc9',
-            surface: '#ffffff',
-            bg: '#f5f3ef',
-          },
-          fontFamily: {
-            display: ['Cormorant Garamond', 'Georgia', 'serif'],
-            sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
-            mono: ['IBM Plex Mono', 'Courier New', 'monospace'],
-          }
+          colors: { ink:'#0d0d0d', dark:'#1a1a2e', gold:'#c8a96e', muted:'#6b6560', rule:'#d4cfc9', surface:'#ffffff', bg:'#f5f3ef' },
+          fontFamily: { display:['Cormorant Garamond','Georgia','serif'], sans:['IBM Plex Sans','system-ui','sans-serif'], mono:['IBM Plex Mono','Courier New','monospace'] }
         }
       }
     }
   </script>
-  
-  <!-- Google Fonts: Cormorant Garamond, IBM Plex Sans, IBM Plex Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
   <style>
-    :root {
-      --color-bg: #f5f3ef;
-      --color-ink: #0d0d0d;
-      --color-dark: #1a1a2e;
-      --color-gold: #c8a96e;
-      --color-muted: #6b6560;
-      --color-rule: #d4cfc9;
-      --color-surface: #ffffff;
-      
-      --font-display: 'Cormorant Garamond', Georgia, serif;
-      --font-body: 'IBM Plex Sans', system-ui, sans-serif;
-      --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
-    }
-    
-    body {
-      background-color: var(--color-bg);
-      color: var(--color-ink);
-      font-family: var(--font-body);
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-    
-    /* Nav links use Cormorant, no uppercase transform */
-    nav a {
-      font-family: var(--font-display);
-      text-transform: none;
-      letter-spacing: normal;
-    }
-    
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      font-weight: 1200;
-      line-height: 1.08;
-      letter-spacing: -0.01em;
-      color: var(--color-ink);
-    }
-    
-    h1 { font-size: clamp(2.4rem, 12vw, 4.2rem) !important; }
-    h2 { font-size: clamp(1.8rem, 4.2vw, 3rem) !important; }
-    h3 { font-size: clamp(1.32rem, 3vw, 2.1rem) !important; }
-    
-    p {
-      font-family: var(--font-body);
-      font-weight: 300;
-      font-size: 1rem;
-      color: var(--color-muted);
-    }
-    
-    .accent { color: var(--color-gold); }
-    .dark-section {
-      background: var(--color-dark);
-      color: var(--color-surface);
-    }
+    :root { --color-bg:#f5f3ef; --color-ink:#0d0d0d; --color-dark:#1a1a2e; --color-gold:#c8a96e; --color-muted:#6b6560; --color-rule:#d4cfc9; --color-surface:#ffffff; --font-display:'Cormorant Garamond',Georgia,serif; --font-body:'IBM Plex Sans',system-ui,sans-serif; --font-mono:'IBM Plex Mono','Courier New',monospace; }
+    body { background-color:var(--color-bg); color:var(--color-ink); font-family:var(--font-body); font-weight:400; font-size:1rem; line-height:1.7; }
+    nav a { font-family:var(--font-display); text-transform:none; letter-spacing:normal; }
+    h1,h2,h3 { font-family:var(--font-display); font-weight:600; line-height:1.08; letter-spacing:-0.01em; color:var(--color-ink); }
+    h1 { font-size:clamp(2.4rem,12vw,4.2rem)!important; }
+    h2 { font-size:clamp(1.8rem,4.2vw,3rem)!important; }
+    h3 { font-size:clamp(1.32rem,3vw,2.1rem)!important; }
+    p { font-family:var(--font-body); font-weight:300; font-size:1rem; color:var(--color-muted); }
+    .accent { color:var(--color-gold); }
+    .dark-section { background:var(--color-dark); color:var(--color-surface); }
   </style>
 </head>
 <body>
 
-<!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); shadow-sm transition-all duration-300">
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color:var(--color-bg);transition:all .3s;">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
     <a href="index.html" class="flex items-center gap-3">
       <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 md:h-10 w-auto" />
-      <span class="font-display font-semibold text-xl md:text-2xl" style="color: var(--color-ink);">Huffman AI Solutions</span>
+      <span class="font-display font-semibold text-xl md:text-2xl" style="color:var(--color-ink);">Huffman AI Solutions</span>
     </a>
-    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color: var(--color-muted);">
+    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color:var(--color-muted);">
       <a href="index.html" class="hover:text-ink transition-colors">Home</a>
       <a href="features.html" class="hover:text-ink transition-colors">Learn More</a>
       <a href="about.html" class="text-ink font-semibold">About</a>
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-display font-semibold transition-colors" style="background-color: var(--color-gold); color: var(--color-surface);">
-        Book a Call
-      </a>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-display font-semibold transition-colors" style="background-color:var(--color-gold);color:var(--color-surface);">Book a Call</a>
     </div>
-    
-    <!-- Mobile menu button -->
-    <button id="menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
+    <button id="menu-btn" class="md:hidden p-2" aria-label="Toggle menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
   </div>
-  
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4 px-6 flex flex-col gap-4 font-display text-base font-medium" style="background-color: var(--color-bg); color: var(--color-muted);">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4 px-6 flex flex-col gap-4 font-display text-base font-medium" style="background-color:var(--color-bg);color:var(--color-muted);">
     <a href="index.html" class="block py-2 text-muted hover:text-ink">Home</a>
     <a href="features.html" class="block py-2 text-muted hover:text-ink">Learn More</a>
     <a href="about.html" class="block py-2 text-ink font-semibold">About</a>
-    <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="block py-2 px-4 rounded-lg text-center font-semibold mt-2" style="background-color: var(--color-gold); color: var(--color-surface);">Book a Call</a>
+    <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="block py-2 px-4 rounded-lg text-center font-semibold mt-2" style="background-color:var(--color-gold);color:var(--color-surface);">Book a Call</a>
   </div>
 </nav>
 
-<!-- ─── HERO ─── -->
-<section class="pt-32 pb-20 px-6" style="background-color: var(--color-bg);">
+<!-- HERO -->
+<section class="pt-32 pb-20 px-6" style="background-color:var(--color-bg);">
   <div class="max-w-4xl mx-auto text-center">
     <h1 class="mb-8">About Huffman AI Solutions</h1>
-    <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-6" style="color: var(--color-muted);">
-      We build and operate complete AI-powered business infrastructure for small business owners — in exchange for equity or profit sharing. We're co-builders, not vendors. We grow when you grow.
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-6" style="color:var(--color-muted);">
+      We build AI employees for home service businesses — so plumbers, electricians, HVAC techs, roofers, cleaners, landscapers, and handymen can stop drowning in office work and get back to the work they love.
     </p>
   </div>
 </section>
 
-<!-- ─── MISSION ─── -->
-<section class="py-20 px-6" style="background-color: var(--color-surface);">
+<!-- MISSION -->
+<section class="py-20 px-6" style="background-color:var(--color-surface);">
   <div class="max-w-4xl mx-auto">
     <h2 class="mb-8 text-center">Our Mission</h2>
     <div class="space-y-6">
       <p class="text-lg">
-        AI is lowering the barrier to starting a business. But the barrier to operating and scaling one is still high. Great founders fail — not because of bad ideas or lack of effort, but because they can't afford the team and systems to execute. Infrastructure is the bottleneck.
+        Home service business owners are trapped. They became technicians because they're great at the work — but they're spending 15–25 hours a week answering phone calls, chasing leads, texting customers, sending invoices, and trying to keep up with marketing. They're working 12-hour days doing two jobs: theirs and an office manager's.
       </p>
       <p class="text-lg">
-        We built Huffman AI Solutions to eliminate that bottleneck. We function like a venture capital firm — except instead of money, we provide business infrastructure: AI agent teams, marketing and sales systems, operational workflows, and technology platforms, all custom-built for your business.
+        We built Huffman AI Solutions to fix that. We don't sell software and walk away. We build <strong>AI employees</strong> — intelligent systems that actually do the work. They capture your leads, follow up automatically, book your appointments, send your invoices, chase your payments, post to your social media, request reviews, and answer your customers' questions. 24/7. In your voice. Without you lifting a finger.
       </p>
       <p class="text-lg">
-        We don't sell software and walk away. We build, operate, optimize, and scale these systems as ongoing partners — with equity or profit sharing that ties our success permanently to yours. You bring the idea, the customers, the problem to solve. We provide the infrastructure to execute and grow.
+        We believe every home service business deserves the same automation power as big enterprises — without the enterprise price tag. That's our mission: <strong>empower home service business owners to grow and scale, unburdening them from the repetitive tasks that hold them back.</strong>
       </p>
     </div>
   </div>
 </section>
 
-<!-- ─── VALUES ─── -->
-<section class="py-20 px-6" style="background-color: var(--color-bg);">
+<!-- THE PROBLEM WE SOLVE -->
+<section class="py-20 px-6" style="background-color:var(--color-bg);">
   <div class="max-w-5xl mx-auto">
-    <h2 class="mb-12 text-center">What We Believe</h2>
+    <h2 class="mb-12 text-center">Why We Exist</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      
+      <div class="text-center">
+        <div class="text-4xl mb-4 accent">🔧</div>
+        <h3 class="mb-4">Built for Trades</h3>
+        <p>We're not a generic AI company. Every system we build is designed specifically for how home service businesses operate — from lead capture on Thumbtack to invoicing after the job is done.</p>
+      </div>
       <div class="text-center">
         <div class="text-4xl mb-4 accent">🤝</div>
-        <h3 class="mb-4">AI Amplifies People</h3>
-        <p>
-          The human relationship is the product. AI handles everything around it — so you can focus on what only you can do: serve customers and grow your business.
-        </p>
+        <h3 class="mb-4">Workers, Not Software</h3>
+        <p>We don't hand you a dashboard and say "good luck." We give you AI employees that do the actual work — capturing leads, following up, scheduling, invoicing, marketing, and handling customer questions.</p>
       </div>
-      
       <div class="text-center">
         <div class="text-4xl mb-4 accent">🎯</div>
-        <h3 class="mb-4">Zero Dollars Out of Pocket</h3>
-        <p>
-          Free setup. Free 30-day trial. We take on all the risk and earn our return through your growth. Save 20+ hours per week or we pay you $500. No hoops, no fine print.
-        </p>
+        <h3 class="mb-4">Zero Risk to You</h3>
+        <p>Free setup. Free 30-day trial. The Zero Admin Guarantee — if you don't love the results, you owe nothing and we pay you $500. We take on all the risk because we're confident in what we build.</p>
       </div>
-
-      <div class="text-center">
-        <div class="text-4xl mb-4 accent">🔗</div>
-        <h3 class="mb-4">Aligned Incentives, Always</h3>
-        <p>
-          We operate on equity and profit sharing — not subscriptions. Our return is tied to your growth. We only win when you win. That's the only kind of partnership worth building.
-        </p>
-      </div>
-      
     </div>
   </div>
 </section>
 
-<!-- ─── TEAM ─── -->
-<section class="py-20 px-6" style="background-color: var(--color-surface);">
+<!-- WHO WE SERVE -->
+<section class="py-20 px-6" style="background-color:var(--color-surface);">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="mb-8 text-center">Who We Serve</h2>
+    <div class="max-w-3xl mx-auto">
+      <p class="text-lg text-center mb-8">Home service businesses with 1–20 employees. The smaller, the better fit. If you're spending hours every week on admin instead of serving customers, we're built for you.</p>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">🔧</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">Plumbers</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">⚡</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">Electricians</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">❄️</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">HVAC Techs</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">🏠</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">Roofers</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">✨</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">Cleaners</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">🌿</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">Landscapers</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">🛠️</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">Handymen</p>
+        </div>
+        <div class="bg-bg rounded-2xl p-5 text-center border border-rule">
+          <div class="text-2xl mb-2">🏗️</div>
+          <p class="text-sm font-semibold" style="color:var(--color-dark);">& More</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="py-20 px-6" style="background-color:var(--color-bg);">
   <div class="max-w-4xl mx-auto text-center">
     <h2 class="mb-8">Based in Charlotte, NC</h2>
     <p class="text-lg mb-8">
-      Huffman AI Solutions is a North Carolina LLC founded to bring enterprise-level AI capabilities to small businesses that deserve them.
+      Huffman AI Solutions is a North Carolina LLC founded by <strong>Jake Huffman</strong> and <strong>Reid Huffman</strong>. We built this company because we saw home service business owners working themselves to the bone on admin work — and we knew AI could fix it.
     </p>
     <p class="text-lg">
       <strong>Questions?</strong> Reach us at <a href="mailto:jakehuffman@huffmansolutionsai.com" class="accent font-semibold">jakehuffman@huffmansolutionsai.com</a>
@@ -214,45 +174,39 @@
   </div>
 </section>
 
-<!-- ─── CTA ─── -->
-<section class="py-20 px-6" style="background: var(--color-dark); color: var(--color-surface);">
+<!-- CTA -->
+<section class="py-20 px-6" style="background:var(--color-dark);color:var(--color-surface);">
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="mb-6" style="color: var(--color-surface);">Ready to Build Together?</h2>
-    <p class="text-xl mb-8" style="color: var(--color-surface); opacity: 0.9;">
-      Free 30-day trial. Zero upfront cost. No obligation if it isn't the right fit.
+    <h2 class="mb-6" style="color:var(--color-surface);">Ready to Get Your Evenings Back?</h2>
+    <p class="text-xl mb-8" style="color:var(--color-surface);opacity:0.9;">
+      Free setup. 30-day free trial. The Zero Admin Guarantee. No obligation if it isn't the right fit.
     </p>
-    <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg" style="background-color: var(--color-gold); color: var(--color-ink);">
-      Book a Free Discovery Call →
+    <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg" style="background-color:var(--color-gold);color:white;">
+      Book a Free Consultation →
     </a>
   </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
-<footer class="py-12 px-6" style="background: var(--color-dark); color: var(--color-surface);">
+<!-- FOOTER -->
+<footer class="py-12 px-6" style="background:var(--color-dark);color:var(--color-surface);">
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
       <div>
         <img src="huffman-ai-secondary-logo.jpg" alt="Huffman AI Solutions" class="h-8 w-auto mx-auto md:mx-0 mb-4" />
-        <p style="color: var(--color-surface); opacity: 0.6;" class="text-sm">
-          © 2026 Huffman AI Solutions LLC · Charlotte, NC
-        </p>
+        <p style="color:var(--color-surface);opacity:0.6;" class="text-sm">© 2026 Huffman AI Solutions LLC · Charlotte, NC</p>
       </div>
       <div class="flex items-center gap-6 text-sm">
-        <a href="features.html" style="color: var(--color-surface); opacity: 0.8;" class="hover:opacity-100">Features</a>
-        <a href="privacy.html" style="color: var(--color-surface); opacity: 0.8;" class="hover:opacity-100">Privacy</a>
-        <a href="terms.html" style="color: var(--color-surface); opacity: 0.8;" class="hover:opacity-100">Terms</a>
-        <a href="mailto:jakehuffman@huffmansolutionsai.com" style="color: var(--color-surface); opacity: 0.8;" class="hover:opacity-100">Contact</a>
+        <a href="features.html" style="color:var(--color-surface);opacity:0.8;" class="hover:opacity-100">Features</a>
+        <a href="privacy.html" style="color:var(--color-surface);opacity:0.8;" class="hover:opacity-100">Privacy</a>
+        <a href="terms.html" style="color:var(--color-surface);opacity:0.8;" class="hover:opacity-100">Terms</a>
+        <a href="mailto:jakehuffman@huffmansolutionsai.com" style="color:var(--color-surface);opacity:0.8;" class="hover:opacity-100">Contact</a>
       </div>
     </div>
   </div>
 </footer>
 
 <script>
-  // Mobile menu toggle
-  document.getElementById('menu-btn').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
+  document.getElementById('menu-btn').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden');});
 </script>
-
 </body>
 </html>

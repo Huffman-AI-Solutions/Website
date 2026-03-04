@@ -3,729 +3,450 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Huffman AI Solutions – AI Infrastructure for Small Business</title>
-  <meta name="description" content="Huffman AI Solutions builds and operates complete AI-powered business infrastructure for small business owners — through equity partnerships, profit sharing, or subscription plans starting at $500/month." />
-
-  <!-- Open Graph / Social Media -->
+  <title>Huffman AI Solutions – AI Employees for Home Service Businesses</title>
+  <meta name="description" content="Huffman AI Solutions builds AI employees for home service businesses. We handle lead generation, scheduling, invoicing, marketing, and customer service. Starting at $499/month." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://huffmansolutionsai.com/" />
-  <meta property="og:title" content="Huffman AI Solutions – AI Infrastructure for Small Business" />
-  <meta property="og:description" content="We build complete AI-powered business infrastructure for small businesses — through equity partnerships, profit sharing, or subscriptions starting at $500/month. Free 30-day trial." />
+  <meta property="og:url" content="https://huffmanai.com/" />
+  <meta property="og:title" content="Huffman AI Solutions – AI Employees for Home Service Businesses" />
+  <meta property="og:description" content="AI employees that handle your leads, scheduling, invoicing, marketing, and customer service — 24/7. Built for plumbers, electricians, HVAC, and more." />
   <meta property="og:image" content="huffman-ai-primary-logo.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Huffman AI Solutions – AI Infrastructure for Small Business" />
-  <meta name="twitter:description" content="We build complete AI-powered business infrastructure for small businesses — through equity partnerships, profit sharing, or subscriptions starting at $500/month. Free 30-day trial." />
-
-  <!-- Favicon -->
+  <meta name="twitter:title" content="Huffman AI Solutions – AI Employees for Home Service Businesses" />
+  <meta name="twitter:description" content="AI employees for home service businesses — 24/7 lead gen, scheduling, invoicing, marketing, and customer service." />
   <link rel="icon" type="image/jpeg" href="huffman-ai-secondary-logo.jpg" />
   <link rel="apple-touch-icon" href="huffman-ai-secondary-logo.jpg" />
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            ink: '#0d0d0d',
-            dark: '#1a1a2e',
-            gold: '#c8a96e',
-            muted: '#6b6560',
-            rule: '#d4cfc9',
-            surface: '#ffffff',
-            bg: '#f5f3ef',
-          },
-          fontFamily: {
-            display: ['Cormorant Garamond', 'Georgia', 'serif'],
-            sans: ['IBM Plex Sans', 'system-ui', 'sans-serif'],
-            mono: ['IBM Plex Mono', 'Courier New', 'monospace'],
-          }
+          colors: { ink:'#0d0d0d', dark:'#1a1a2e', gold:'#c8a96e', muted:'#6b6560', rule:'#d4cfc9', surface:'#ffffff', bg:'#f5f3ef' },
+          fontFamily: { display:['Cormorant Garamond','Georgia','serif'], sans:['IBM Plex Sans','system-ui','sans-serif'], mono:['IBM Plex Mono','Courier New','monospace'] }
         }
       }
     }
   </script>
-
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <style>
-    :root {
-      --color-bg: #f5f3ef;
-      --color-ink: #0d0d0d;
-      --color-dark: #1a1a2e;
-      --color-gold: #c8a96e;
-      --color-muted: #6b6560;
-      --color-rule: #d4cfc9;
-      --color-surface: #ffffff;
-
-      --font-display: 'Cormorant Garamond', Georgia, serif;
-      --font-body: 'IBM Plex Sans', system-ui, sans-serif;
-      --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
-    }
-
-    body {
-      background-color: var(--color-bg);
-      color: var(--color-ink);
-      font-family: var(--font-body);
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 1.7;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-display);
-      font-weight: 600;
-      line-height: 1.08;
-      letter-spacing: -0.01em;
-      color: var(--color-ink);
-    }
-
-    h1 { font-size: clamp(2.4rem, 6vw, 4.2rem) !important; }
-    h2 { font-size: clamp(1.8rem, 4.2vw, 3rem) !important; }
-    h3 { font-size: clamp(1.32rem, 3vw, 2.1rem) !important; }
-
-    p {
-      font-family: var(--font-body);
-      font-weight: 300;
-      font-size: 1rem;
-      color: var(--color-muted);
-    }
-
-    .accent { color: var(--color-gold); }
-    .gradient-hero { background: linear-gradient(135deg, var(--color-dark) 0%, #1a1a2e 100%); }
-
-    .card-hover { transition: transform 0.2s ease, box-shadow 0.2s ease; }
-    .card-hover:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
-
-    /* FAQ accordion */
-    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
-    .faq-answer.open { max-height: 600px; }
-    .faq-icon { transition: transform 0.25s ease; }
-    .faq-icon.open { transform: rotate(45deg); }
+    :root { --color-bg:#f5f3ef; --color-ink:#0d0d0d; --color-dark:#1a1a2e; --color-gold:#c8a96e; --color-muted:#6b6560; --color-rule:#d4cfc9; --color-surface:#ffffff; --font-display:'Cormorant Garamond',Georgia,serif; --font-body:'IBM Plex Sans',system-ui,sans-serif; --font-mono:'IBM Plex Mono','Courier New',monospace; }
+    body { background-color:var(--color-bg); color:var(--color-ink); font-family:var(--font-body); font-weight:400; font-size:1rem; line-height:1.7; }
+    h1,h2,h3 { font-family:var(--font-display); font-weight:600; line-height:1.08; letter-spacing:-0.01em; color:var(--color-ink); }
+    h1 { font-size:clamp(2.4rem,6vw,4.2rem)!important; }
+    h2 { font-size:clamp(1.8rem,4.2vw,3rem)!important; }
+    h3 { font-size:clamp(1.32rem,3vw,2.1rem)!important; }
+    p { font-family:var(--font-body); font-weight:300; font-size:1rem; color:var(--color-muted); }
+    .accent { color:var(--color-gold); }
+    .gradient-hero { background:linear-gradient(135deg,var(--color-dark) 0%,#1a1a2e 100%); }
+    .card-hover { transition:transform 0.2s ease,box-shadow 0.2s ease; }
+    .card-hover:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.08); }
+    .faq-answer { max-height:0; overflow:hidden; transition:max-height 0.35s ease; }
+    .faq-answer.open { max-height:600px; }
+    .faq-icon { transition:transform 0.25s ease; }
+    .faq-icon.open { transform:rotate(45deg); }
   </style>
 </head>
 <body>
 
-<!-- ─── NAVIGATION ─── -->
-<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color: var(--color-bg); transition: all 0.3s;">
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color:var(--color-bg);transition:all .3s;">
   <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
     <a href="index.html" class="flex items-center gap-3">
       <img src="huffman-ai-primary-logo.jpg" alt="Huffman AI Solutions" class="h-8 md:h-10 w-auto" />
-      <span class="font-display font-semibold text-xl md:text-2xl" style="color: var(--color-ink);">Huffman AI Solutions</span>
+      <span class="font-display font-semibold text-xl md:text-2xl" style="color:var(--color-ink);">Huffman AI Solutions</span>
     </a>
-    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color: var(--color-muted);">
+    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color:var(--color-muted);">
       <a href="#features" class="hover:text-ink transition-colors">Features</a>
       <a href="#pricing" class="hover:text-ink transition-colors">Pricing</a>
       <a href="#faq" class="hover:text-ink transition-colors">FAQ</a>
       <a href="about.html" class="hover:text-ink transition-colors">About</a>
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-display font-semibold transition-all hover:opacity-90" style="background-color: var(--color-gold); color: var(--color-surface);">
-        Book a Call
-      </a>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-display font-semibold transition-all hover:opacity-90" style="background-color:var(--color-gold);color:var(--color-surface);">Book a Call</a>
     </div>
-    <button id="menu-btn" class="md:hidden p-2" aria-label="Toggle menu">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-    </button>
+    <button id="menu-btn" class="md:hidden p-2" aria-label="Toggle menu"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
   </div>
-  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4 px-6 flex flex-col gap-4 font-display text-base font-medium" style="background-color: var(--color-bg); color: var(--color-muted);">
+  <div id="mobile-menu" class="hidden md:hidden border-t border-gray-100 py-4 px-6 flex flex-col gap-4 font-display text-base font-medium" style="background-color:var(--color-bg);color:var(--color-muted);">
     <a href="#features" class="block py-2 hover:text-ink">Features</a>
     <a href="#pricing" class="block py-2 hover:text-ink">Pricing</a>
     <a href="#faq" class="block py-2 hover:text-ink">FAQ</a>
     <a href="about.html" class="block py-2 hover:text-ink">About</a>
-    <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="block py-2 px-4 rounded-lg text-center font-semibold mt-2" style="background-color: var(--color-gold); color: var(--color-surface);">Book a Call</a>
+    <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="block py-2 px-4 rounded-lg text-center font-semibold mt-2" style="background-color:var(--color-gold);color:var(--color-surface);">Book a Call</a>
   </div>
 </nav>
 
-<!-- ─── HERO ─── -->
+<!-- HERO -->
 <section id="hero" class="gradient-hero pt-24 pb-20 px-6 text-white">
   <div class="max-w-5xl mx-auto text-center">
     <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 text-sm font-medium mb-8">
       <span class="w-2 h-2 bg-gold rounded-full animate-pulse"></span>
-      Free 30-Day Trial · Three Flexible Models
+      Free Setup · 30-Day Free Trial · The Zero Admin Guarantee
     </div>
-
-    <h1 class="mb-6" style="line-height: 1.1;">
-      <span class="text-white">You Bring the Vision.</span><br/>
-      <span class="text-gold">We Build the Infrastructure.</span>
+    <h1 class="mb-6" style="line-height:1.1;">
+      <span class="text-white">Stop Doing Office Work.</span><br/>
+      <span class="text-gold">Start Growing Your Business.</span>
     </h1>
-
     <p class="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-10 leading-relaxed">
-      We build and operate complete AI-powered business infrastructure for small businesses — agent teams, sales systems, and operational workflows — all custom-built for your business. Choose the model that fits: <strong class="text-white">equity partnership, profit sharing, or subscription from $500/month.</strong>
+      We build <strong class="text-white">AI employees</strong> for home service businesses — plumbers, electricians, HVAC techs, roofers, cleaners, landscapers, and handymen. They handle your leads, scheduling, invoicing, marketing, and customer service <strong class="text-white">24/7</strong> — so you can focus on the work you love.
     </p>
-
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer"
-         class="w-full sm:w-auto bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">
-        Book a Free Call →
-      </a>
-      <a href="#mission"
-         class="w-full sm:w-auto text-white/80 hover:text-white font-medium text-lg px-8 py-4 rounded-xl border border-white/20 hover:border-white/50 transition-colors">
-        Learn More ↓
-      </a>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">Book a Free Call →</a>
+      <a href="#mission" class="w-full sm:w-auto text-white/80 hover:text-white font-medium text-lg px-8 py-4 rounded-xl border border-white/20 hover:border-white/50 transition-colors">Learn More ↓</a>
     </div>
-
     <div class="flex flex-wrap items-center justify-center gap-6 text-white/60 text-sm">
-      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> 100% free setup</span>
-      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> Free 30-day trial</span>
-      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> Equity, profit sharing, or subscription</span>
-      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> $500 if you don't love it</span>
+      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> 100% free setup ($1,500+ value)</span>
+      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> 30-day free trial</span>
+      <span class="flex items-center gap-1.5"><span class="text-gold">✓</span> We don't give you software — we give you workers</span>
     </div>
   </div>
 </section>
 
-<!-- ─── OUR MISSION ─── -->
-<section id="mission" class="py-20 px-6" style="background-color: var(--color-surface);">
+<!-- MISSION -->
+<section id="mission" class="py-20 px-6" style="background-color:var(--color-surface);">
   <div class="max-w-4xl mx-auto text-center">
-    <p class="text-gold font-semibold uppercase tracking-widest text-sm mb-4" style="font-family: var(--font-mono);">Our Mission</p>
-    <h2 class="mb-8">The Infrastructure Bottleneck Is Why Great Founders Fail. We Eliminate It.</h2>
+    <p class="text-gold font-semibold uppercase tracking-widest text-sm mb-4" style="font-family:var(--font-mono);">Our Mission</p>
+    <h2 class="mb-8">We Empower Home Service Business Owners to Grow and Scale — Unburdening Them from the Repetitive Tasks That Hold Them Back.</h2>
     <div class="text-left space-y-5 max-w-3xl mx-auto">
-      <p class="text-lg">
-        AI is lowering the barrier to starting a business. But the barrier to operating and scaling one is still high. Great founders fail — not because of bad ideas, but because they can't afford the team and systems to execute. That bottleneck is what we exist to eliminate.
-      </p>
-      <p class="text-lg">
-        We're an AI agency — but we don't hand over software and walk away. We function like a venture capital firm, except instead of money, we provide business infrastructure: the workers, systems, and operational backbone you need to build and scale. You bring the idea and the drive — we build everything else.
-      </p>
-      <p class="text-lg">
-        Every system we build is custom-designed for your specific workflows, communication style, and growth stage. We don't do templates. Whether you're an early-stage founder (equity), an established business scaling up (profit sharing), or looking for a defined-scope deployment (subscription from $500/month) — we have a model built for where you are.
-      </p>
+      <p class="text-lg">You became a plumber, an electrician, a roofer because you're great at it. Not because you wanted to spend 15–25 hours a week answering phone calls, chasing leads, sending invoices, and posting to social media.</p>
+      <p class="text-lg">That office work is the bottleneck. It's why you're working 12-hour days doing two jobs — the one you're great at, and the one that's drowning you. We built Huffman AI Solutions to eliminate that bottleneck entirely.</p>
+      <p class="text-lg">We believe every home service business deserves the same automation power as big enterprises — without the enterprise price tag. We don't hand you software and walk away. <strong>We give you AI employees</strong> that handle the work — 24/7, never take vacations, never forget to follow up.</p>
     </div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
       <div class="bg-bg rounded-2xl p-6 text-center">
-        <p class="text-4xl font-extrabold font-display" style="color: var(--color-dark);">20+</p>
-        <p class="text-muted text-sm mt-2">Hours saved per week</p>
+        <p class="text-4xl font-extrabold font-display" style="color:var(--color-dark);">15–25</p>
+        <p class="text-muted text-sm mt-2">Hours of office work eliminated weekly</p>
       </div>
       <div class="bg-bg rounded-2xl p-6 text-center">
         <p class="text-4xl font-extrabold font-display text-gold">24/7</p>
-        <p class="text-muted text-sm mt-2">Always available</p>
+        <p class="text-muted text-sm mt-2">Your AI employees never clock out</p>
       </div>
       <div class="bg-bg rounded-2xl p-6 text-center">
-        <p class="text-4xl font-extrabold font-display" style="color: var(--color-dark);">1–2</p>
-        <p class="text-muted text-sm mt-2">Weeks to go live</p>
+        <p class="text-4xl font-extrabold font-display" style="color:var(--color-dark);">6</p>
+        <p class="text-muted text-sm mt-2">Workflows we automate</p>
       </div>
       <div class="bg-bg rounded-2xl p-6 text-center">
         <p class="text-4xl font-extrabold font-display text-gold">$0</p>
-        <p class="text-muted text-sm mt-2">Setup cost</p>
+        <p class="text-muted text-sm mt-2">Setup cost — free on every package</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── SOUND LIKE YOU? ─── -->
-<section class="py-20 px-6" style="background-color: var(--color-bg);">
+<!-- SOUND LIKE YOU? -->
+<section class="py-20 px-6" style="background-color:var(--color-bg);">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="mb-4">Sound Like You?</h2>
-      <p class="text-lg text-muted max-w-2xl mx-auto">Most small business owners are spending the majority of their day on work that shouldn't require them at all.</p>
+      <p class="text-lg text-muted max-w-2xl mx-auto">Most home service business owners spend half their day on work that has nothing to do with serving customers.</p>
     </div>
     <div class="grid md:grid-cols-2 gap-6">
-
-      <!-- Pain points -->
       <div class="bg-white rounded-2xl p-8 border border-rule shadow-sm">
-        <h3 class="mb-6" style="color: var(--color-dark);">Without AI Infrastructure</h3>
+        <h3 class="mb-6" style="color:var(--color-dark);">Your Typical Day Right Now</h3>
         <ul class="space-y-4">
-          <li class="flex items-start gap-3">
-            <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
-            <span class="text-muted">Inbox piling up — emails that need replies are buried under noise</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
-            <span class="text-muted">Follow-ups fall through the cracks — leads go cold because you didn't have time</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
-            <span class="text-muted">Scheduling back-and-forth eats hours every week</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
-            <span class="text-muted">You start each day reactive instead of focused</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
-            <span class="text-muted">Data entry, records, and reports are always behind</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-red-400 mt-1 shrink-0 text-lg">✕</span>
-            <span class="text-muted">Growing feels impossible because you're too busy operating</span>
-          </li>
+          <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0 text-lg">✕</span><span class="text-muted">Phone ringing nonstop — leads from Google, Facebook, and Thumbtack all need answers</span></li>
+          <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0 text-lg">✕</span><span class="text-muted">Texting customers back-and-forth to schedule and reschedule jobs</span></li>
+          <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0 text-lg">✕</span><span class="text-muted">Warm leads going cold because you didn't follow up in time</span></li>
+          <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0 text-lg">✕</span><span class="text-muted">Invoices sitting unsent, payments unchased — money on the table</span></li>
+          <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0 text-lg">✕</span><span class="text-muted">No time for marketing — reviews are stale and social media is dead</span></li>
+          <li class="flex items-start gap-3"><span class="text-red-400 mt-1 shrink-0 text-lg">✕</span><span class="text-muted">Working 12-hour days doing two jobs — yours and the office's</span></li>
         </ul>
       </div>
-
-      <!-- With AI -->
       <div class="bg-dark rounded-2xl p-8 border border-gold/20 shadow-sm">
-        <h3 class="mb-6 text-white">With Huffman AI Infrastructure</h3>
+        <h3 class="mb-6 text-white">Your Day with AI Employees</h3>
         <ul class="space-y-4">
-          <li class="flex items-start gap-3">
-            <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
-            <span class="text-white/80">Inbox handled overnight — only the things that need you are waiting</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
-            <span class="text-white/80">Follow-ups go out automatically, on the right cadence, in your voice</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
-            <span class="text-white/80">Meetings get scheduled without the back-and-forth</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
-            <span class="text-white/80">Every morning starts with a briefing — your priorities, handled</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
-            <span class="text-white/80">Records and reports stay current, automatically</span>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-gold mt-1 shrink-0 text-lg">✓</span>
-            <span class="text-white/80">You spend your day on growth — because the operations run themselves</span>
-          </li>
+          <li class="flex items-start gap-3"><span class="text-gold mt-1 shrink-0 text-lg">✓</span><span class="text-white/80">Every lead from Google, Facebook, and Thumbtack captured and responded to instantly</span></li>
+          <li class="flex items-start gap-3"><span class="text-gold mt-1 shrink-0 text-lg">✓</span><span class="text-white/80">Jobs booked automatically — reminders sent, rescheduling handled</span></li>
+          <li class="flex items-start gap-3"><span class="text-gold mt-1 shrink-0 text-lg">✓</span><span class="text-white/80">Follow-ups go out on the right cadence — no lead falls through the cracks</span></li>
+          <li class="flex items-start gap-3"><span class="text-gold mt-1 shrink-0 text-lg">✓</span><span class="text-white/80">Invoices generated after every job — payment links included, reminders automatic</span></li>
+          <li class="flex items-start gap-3"><span class="text-gold mt-1 shrink-0 text-lg">✓</span><span class="text-white/80">Review requests go out automatically, social media stays active, campaigns run themselves</span></li>
+          <li class="flex items-start gap-3"><span class="text-gold mt-1 shrink-0 text-lg">✓</span><span class="text-white/80">You spend your day on the job site — because the office runs itself</span></li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
 
-<!-- ─── WHILE YOUR AI EMPLOYEE DOES ─── -->
-<section id="features" class="py-20 px-6" style="background-color: var(--color-surface);">
+<!-- THE 6 WORKFLOWS -->
+<section id="features" class="py-20 px-6" style="background-color:var(--color-surface);">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-14">
-      <h2 class="mb-4">What Your AI Infrastructure Handles</h2>
-      <p class="text-muted text-lg max-w-2xl mx-auto">Custom-built for your business. Not templates — actual AI agent teams that think, coordinate, and operate independently across your workflows.</p>
+      <h2 class="mb-4">The 6 Workflows We Automate</h2>
+      <p class="text-muted text-lg max-w-2xl mx-auto">Each one is an AI employee built specifically for your business. Pick the ones you need, or get all six.</p>
     </div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Lead Generation -->
       <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
         <div class="text-3xl mb-4">🎯</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Lead Generation</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Identifies, researches, and engages potential clients on your behalf — sourcing qualified prospects, crafting personalized outreach in your voice, and keeping your pipeline full without you lifting a finger.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">New revenue, on autopilot</span>
+        <h3 class="text-xl mb-3" style="color:var(--color-dark);">Lead Generation</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Captures every lead from Google, Facebook, Thumbtack, and your website — instantly. Your AI employee responds within seconds, qualifies the lead, and gets them into your pipeline. No more missed calls.</p>
+        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family:var(--font-mono);">Never miss a lead again</span>
       </div>
-
-      <!-- Email Management -->
-      <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
-        <div class="text-3xl mb-4">📧</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Email Management</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Reads, categorizes, and drafts responses to every email — even at 2 AM. Flags urgent items, drafts replies in your voice, and auto-acknowledges routine inquiries.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">Save 10–15 hrs/week</span>
-      </div>
-
-      <!-- Meeting Coordination -->
-      <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
-        <div class="text-3xl mb-4">📅</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Meeting Coordination</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Checks calendars, proposes times that work for all parties, books meetings, sends reminders, and handles rescheduling — all automatically.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">Save 5–8 hrs/week</span>
-      </div>
-
-      <!-- Follow-Up Management -->
       <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
         <div class="text-3xl mb-4">🔁</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Follow-Up Management</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Never let a lead go cold. Automatic follow-ups at the right intervals — with leads, customers, and partners — in your voice, on your schedule.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">Save 5–8 hrs/week</span>
+        <h3 class="text-xl mb-3" style="color:var(--color-dark);">Lead Nurturing</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Automated text and email follow-up sequences that keep leads warm until they book. Follows up at the right time, in your voice — so no lead goes cold because you were on a job.</p>
+        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family:var(--font-mono);">Leads stay warm, not cold</span>
       </div>
-
-      <!-- Daily Briefings -->
       <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
-        <div class="text-3xl mb-4">📊</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Daily Briefings</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Every morning: what needs your attention, what's already handled, and your top priorities for the day — so you start focused, not reactive.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">Save 30–60 min/day</span>
+        <div class="text-3xl mb-4">📅</div>
+        <h3 class="text-xl mb-3" style="color:var(--color-dark);">Scheduling</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Books appointments, sends reminders, handles rescheduling — all automatically. Customers pick a time, get confirmed instantly, and get reminded before the job. No more back-and-forth.</p>
+        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family:var(--font-mono);">Zero scheduling headaches</span>
       </div>
-
-      <!-- Research & Summaries -->
       <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
-        <div class="text-3xl mb-4">🔍</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Research & Summaries</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Researches contacts, companies, and topics before meetings. Summarizes documents, threads, and reports so you walk in prepared — without doing the legwork.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">Save 3–5 hrs/week</span>
+        <div class="text-3xl mb-4">💰</div>
+        <h3 class="text-xl mb-3" style="color:var(--color-dark);">Invoicing</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Generates invoices after every job, sends payment links, and chases overdue payments automatically. No more money left on the table because you forgot to bill or follow up.</p>
+        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family:var(--font-mono);">Get paid faster, every time</span>
       </div>
-
-      <!-- Client Communication -->
+      <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
+        <div class="text-3xl mb-4">📣</div>
+        <h3 class="text-xl mb-3" style="color:var(--color-dark);">Marketing</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Social media posts, Google review requests, and email campaigns — all on autopilot. Keeps your online presence active and reputation growing while you're on the job site.</p>
+        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family:var(--font-mono);">Marketing that runs itself</span>
+      </div>
       <div class="card-hover bg-bg rounded-2xl p-7 border border-rule shadow-sm">
         <div class="text-3xl mb-4">🤝</div>
-        <h3 class="text-xl mb-3" style="color: var(--color-dark);">Client Communication</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Proactive updates to clients and partners. Flags at-risk relationships before they go cold. Drafts proposals, summaries, and status updates so nothing slips.</p>
-        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family: var(--font-mono);">Save 3–5 hrs/week</span>
+        <h3 class="text-xl mb-3" style="color:var(--color-dark);">Customer Service</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Answers FAQs, handles after-hours inquiries, and manages support tickets — 24/7. Your customers always get a fast, professional response, even when you're on a roof or under a sink.</p>
+        <span class="inline-block bg-surface border border-rule text-gold text-xs font-bold px-3 py-1 rounded-full" style="font-family:var(--font-mono);">Always-on support</span>
       </div>
-
     </div>
-
-    <!-- Total callout -->
     <div class="mt-12 bg-dark rounded-2xl p-8 text-center">
-      <p class="text-2xl md:text-3xl font-extrabold mb-2 text-white font-display">Total: <span class="text-gold">20+ hours back every week</span></p>
-      <p class="text-white/70">That's a complete operations team's worth of work — handled 24/7 by AI infrastructure, custom-built for your specific business.</p>
+      <p class="text-2xl md:text-3xl font-extrabold mb-2 text-white font-display">Result: <span class="text-gold">15–25 hours of office work eliminated every week</span></p>
+      <p class="text-white/70">That's a full-time office employee's worth of work — handled 24/7 by AI employees built for your home service business.</p>
     </div>
   </div>
 </section>
 
-<!-- ─── OUR OFFER / HOW IT WORKS ─── -->
-<section id="how" class="py-20 px-6" style="background-color: var(--color-bg);">
+<!-- HOW IT WORKS -->
+<section id="how" class="py-20 px-6" style="background-color:var(--color-bg);">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="mb-4">How It Works</h2>
-      <p class="text-muted text-lg">Zero upfront cost. We build everything. You get a partner, not a vendor.</p>
+      <p class="text-muted text-lg">Free setup. Free trial. We build everything. You keep doing what you do best.</p>
     </div>
     <div class="grid md:grid-cols-4 gap-6">
       <div class="text-center">
         <div class="w-14 h-14 bg-dark text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4 font-display">1</div>
-        <h3 class="text-xl mb-2 font-display" style="color: var(--color-dark);">Free Discovery Call</h3>
-        <p class="text-muted text-sm">15 minutes. We learn your biggest time-wasters and whether we're a good fit. No sales pitch.</p>
+        <h3 class="text-xl mb-2 font-display" style="color:var(--color-dark);">Free Consultation</h3>
+        <p class="text-muted text-sm">15 minutes. We learn about your business, your biggest time-wasters, and which workflows matter most. No sales pitch.</p>
       </div>
       <div class="text-center">
         <div class="w-14 h-14 bg-dark text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4 font-display">2</div>
-        <h3 class="text-xl mb-2 font-display" style="color: var(--color-dark);">Custom Design</h3>
-        <p class="text-muted text-sm">1–2 weeks. We architect your AI systems and infrastructure — custom to your workflows, communication style, and growth stage. 100% free.</p>
+        <h3 class="text-xl mb-2 font-display" style="color:var(--color-dark);">Custom Setup (Free)</h3>
+        <p class="text-muted text-sm">We build your AI employees — custom to your business, your customers, and your style. Setup is 100% free ($1,500+ value).</p>
       </div>
       <div class="text-center">
         <div class="w-14 h-14 bg-dark text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4 font-display">3</div>
-        <h3 class="text-xl mb-2 font-display" style="color: var(--color-dark);">Free Trial</h3>
-        <p class="text-muted text-sm">30 days running in your real business, zero obligation. We optimize based on your feedback throughout.</p>
+        <h3 class="text-xl mb-2 font-display" style="color:var(--color-dark);">30-Day Free Trial</h3>
+        <p class="text-muted text-sm">Your AI employees run in your real business for 30 days. Zero obligation. We optimize throughout.</p>
       </div>
       <div class="text-center">
         <div class="w-14 h-14 bg-gold text-white text-xl font-extrabold rounded-2xl flex items-center justify-center mx-auto mb-4 font-display">4</div>
-        <h3 class="text-xl mb-2 font-display" style="color: var(--color-dark);">Formalize the Partnership</h3>
-        <p class="text-muted text-sm">Value is clear? We formalize as equity partners or profit-share partners and scale together. Don't love it? You owe $0 — and we pay you $500.</p>
+        <h3 class="text-xl mb-2 font-display" style="color:var(--color-dark);">Ongoing Service</h3>
+        <p class="text-muted text-sm">Love the results? We keep operating and optimizing. Cancel anytime. Don't love it? You owe nothing.</p>
       </div>
     </div>
     <div class="mt-10 text-center">
-      <p class="text-muted mb-6 font-medium">No upfront cost. No setup fees. Zero risk to you.</p>
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-md hover:opacity-90">
-        Schedule Your Free Discovery Call
-      </a>
+      <p class="text-muted mb-6 font-medium">No upfront cost. No setup fees. No long-term contracts.</p>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-md hover:opacity-90">Schedule Your Free Consultation</a>
     </div>
   </div>
 </section>
 
-<!-- ─── DAY IN THE LIFE ─── -->
+<!-- DAY IN THE LIFE -->
 <section class="py-20 px-6 bg-dark text-white">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-12">
       <h2 class="mb-4 text-white font-display">A Day in the Life</h2>
-      <p class="text-white/70 text-lg">Meet Sarah — owner of a 3-person firm. Here's her Monday before and after Huffman AI infrastructure.</p>
+      <p class="text-white/70 text-lg">Meet Mike — owner of a 3-person plumbing company. Here's his Monday before and after Huffman AI employees.</p>
     </div>
-
     <div class="grid md:grid-cols-2 gap-8">
-      <!-- BEFORE -->
       <div class="bg-red-900/20 border-2 border-red-500/30 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-6">
           <span class="text-4xl">😰</span>
-          <h3 class="font-display text-white">Before: Chaos Mode</h3>
+          <h3 class="font-display text-white">Before: Two Jobs, One Person</h3>
         </div>
         <div class="space-y-4 text-white/90">
-          <div>
-            <p class="font-semibold text-white mb-1">7:00 AM</p>
-            <p class="text-sm">Wakes up to 83 unread emails. Customer who needed a follow-up on Friday still hasn't heard back.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">9:30 AM</p>
-            <p class="text-sm">Still doing inbox triage. Four meetings need scheduling — manually checking calendars for multiple parties.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">12:00 PM</p>
-            <p class="text-sm">Realizes the warm leads from last week never got a follow-up. They went cold.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">3:00 PM</p>
-            <p class="text-sm">Client calls: "Did you send those materials?" Sarah forgot. Scrambles to pull everything together.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">6:00 PM</p>
-            <p class="text-sm">Still 29 unread emails. Hasn't done any actual business development. Feels like she's drowning.</p>
-          </div>
+          <div><p class="font-semibold text-white mb-1">6:30 AM</p><p class="text-sm">Wakes up to 4 missed calls and 12 texts from the weekend. A Thumbtack lead from Friday never got a reply — they already hired someone else.</p></div>
+          <div><p class="font-semibold text-white mb-1">8:00 AM</p><p class="text-sm">On the way to a job, texting back-and-forth with three customers trying to nail down appointment times. Almost rear-ends someone.</p></div>
+          <div><p class="font-semibold text-white mb-1">12:00 PM</p><p class="text-sm">Lunch break spent writing up invoices from last week's jobs. Two customers still haven't paid from two weeks ago — needs to chase them down.</p></div>
+          <div><p class="font-semibold text-white mb-1">3:00 PM</p><p class="text-sm">Customer calls: "Are you still coming Thursday?" Mike forgot to send the confirmation. Scrambles to check his calendar.</p></div>
+          <div><p class="font-semibold text-white mb-1">7:00 PM</p><p class="text-sm">Finally home. Still has to post something to Facebook, hasn't asked a single customer for a Google review in months. Too tired. Doesn't do it.</p></div>
         </div>
         <div class="mt-6 pt-6 border-t border-red-500/30">
-          <p class="text-red-300 font-bold">Time on admin: <span class="text-2xl">7+ hours</span></p>
-          <p class="text-white/60 text-sm mt-1">Growth work done: Barely any.</p>
+          <p class="text-red-300 font-bold">Time on office work: <span class="text-2xl">3+ hours</span></p>
+          <p class="text-white/60 text-sm mt-1">Lost revenue from missed leads and late invoices: hundreds.</p>
         </div>
       </div>
-
-      <!-- AFTER -->
       <div class="bg-gold/20 border-2 border-gold/30 rounded-2xl p-8">
         <div class="flex items-center gap-3 mb-6">
           <span class="text-4xl">😌</span>
-          <h3 class="font-display text-white">After: Calm &amp; Focused</h3>
+          <h3 class="font-display text-white">After: Back-Office on Autopilot</h3>
         </div>
         <div class="space-y-4 text-white/90">
-          <div>
-            <p class="font-semibold text-white mb-1">7:00 AM</p>
-            <p class="text-sm">Checks phone. AI handled 41 emails overnight: acknowledged inquiries, scheduled 2 meetings, sent follow-ups.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">8:30 AM</p>
-            <p class="text-sm">Morning briefing from AI: 3 urgent items (including that Friday customer — AI already sent an update). Everything else handled.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">9:00 AM</p>
-            <p class="text-sm">Starts her day with high-value work — the things only she can do. Inbox: already under control.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">12:00 PM</p>
-            <p class="text-sm">AI sent warm lead follow-ups this morning. Two replied interested. Sarah takes it from there.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">3:00 PM</p>
-            <p class="text-sm">Client's materials? AI drafted and organized them last night. Reviewed and sent in 10 minutes this morning.</p>
-          </div>
-          <div>
-            <p class="font-semibold text-white mb-1">6:00 PM</p>
-            <p class="text-sm">4 unread emails (all flagged as needing her personal attention). Full day of growth work done. Feels in control.</p>
-          </div>
+          <div><p class="font-semibold text-white mb-1">6:30 AM</p><p class="text-sm">Checks phone. AI responded to all 4 weekend calls and 12 texts overnight. The Thumbtack lead? Booked for Wednesday — AI replied in 30 seconds.</p></div>
+          <div><p class="font-semibold text-white mb-1">8:00 AM</p><p class="text-sm">Drives to the job. Three appointments already confirmed and scheduled by AI — customers got reminders last night.</p></div>
+          <div><p class="font-semibold text-white mb-1">12:00 PM</p><p class="text-sm">Lunch break is actually a lunch break. Last week's invoices were sent automatically. The two overdue payments? AI sent reminders — one already paid this morning.</p></div>
+          <div><p class="font-semibold text-white mb-1">3:00 PM</p><p class="text-sm">Customer got an automatic confirmation text yesterday with date, time, and address. No confusion, no forgotten appointments.</p></div>
+          <div><p class="font-semibold text-white mb-1">7:00 PM</p><p class="text-sm">Home on time. AI posted to Facebook today, sent review requests to the last 3 customers, and two of them left 5-star reviews. Mike didn't lift a finger.</p></div>
         </div>
         <div class="mt-6 pt-6 border-t border-gold/30">
-          <p class="text-gold font-bold">Time on admin: <span class="text-2xl">45 minutes</span></p>
-          <p class="text-white/60 text-sm mt-1">Growth work done: A full day's worth.</p>
+          <p class="text-gold font-bold">Time on office work: <span class="text-2xl">Zero</span></p>
+          <p class="text-white/60 text-sm mt-1">Revenue recovered: Thumbtack lead booked, invoices collected, reviews growing.</p>
         </div>
       </div>
     </div>
-
     <div class="mt-12 text-center">
-      <p class="text-white/90 text-xl font-semibold mb-6">That's 20+ hours back in your first month.</p>
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">
-        I Want This →
-      </a>
+      <p class="text-white/90 text-xl font-semibold mb-6">That's 15–25 hours back every single week. Your back-office, running itself.</p>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">I Want This →</a>
     </div>
   </div>
 </section>
 
-<!-- ─── PRICING ─── -->
-<section id="pricing" class="py-20 px-6" style="background-color: var(--color-bg);">
+<!-- PRICING -->
+<section id="pricing" class="py-20 px-6" style="background-color:var(--color-bg);">
   <div class="max-w-5xl mx-auto">
     <div class="text-center mb-14">
-      <h2 class="mb-4">How We Work Together</h2>
-      <p class="text-muted text-lg max-w-2xl mx-auto">Three models. One goal: AI infrastructure that fits exactly where you are. From defined-scope subscriptions to full equity partnerships — every structure is built around your business and your stage of growth.</p>
+      <h2 class="mb-4">Simple, Transparent Pricing</h2>
+      <p class="text-muted text-lg max-w-2xl mx-auto">Pick the workflows you need. Every package includes free setup ($1,500+ value), a 30-day free trial, 24/7 AI employees, human backup, monthly performance reports, and cancel-anytime flexibility.</p>
     </div>
-
     <div class="grid md:grid-cols-3 gap-6 mb-12">
-
-      <!-- Subscription -->
+      <!-- Starter -->
       <div class="card-hover bg-white rounded-2xl p-8 border border-rule shadow-sm relative">
-        <div class="absolute -top-3 left-6 bg-dark text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family: var(--font-mono);">DEFINED SCOPE</div>
-        <div class="text-3xl mb-4">📋</div>
-        <h3 class="text-xl mb-3 font-display" style="color: var(--color-dark);">Subscription</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">Fixed monthly pricing for a defined set of AI services. You know exactly what you're getting and what you're paying. Cancel anytime — no long-term contracts required.</p>
+        <div class="absolute -top-3 left-6 bg-dark text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family:var(--font-mono);">STARTER</div>
+        <div class="text-3xl mb-4">⚡</div>
+        <h3 class="text-xl mb-3 font-display" style="color:var(--color-dark);">One Workflow</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Choose any single workflow — lead generation, lead nurturing, scheduling, invoicing, marketing, or customer service. The perfect starting point to see the impact.</p>
         <ul class="space-y-2 text-sm text-muted mb-4">
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Starting at $500/month</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Defined scope — clear deliverables</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Cancel anytime with 30 days' notice</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial included</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> One AI employee, one workflow</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Free setup ($1,500+ value)</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Cancel anytime</li>
         </ul>
-        <p class="text-xs font-bold uppercase tracking-wider" style="font-family: var(--font-mono); color: var(--color-gold);">From $500/mo</p>
+        <p class="text-xs font-bold uppercase tracking-wider" style="font-family:var(--font-mono);color:var(--color-gold);">$499/month</p>
       </div>
-
-      <!-- Equity Partnership -->
+      <!-- Sales Pipeline (popular) -->
       <div class="card-hover bg-white rounded-2xl p-8 border-2 border-gold shadow-md relative">
-        <div class="absolute -top-3 left-6 bg-gold text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family: var(--font-mono);">EARLY-STAGE</div>
-        <div class="text-3xl mb-4">🤝</div>
-        <h3 class="text-xl mb-3 font-display" style="color: var(--color-dark);">Equity Partnership</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">You have the idea, the drive, and the customers — but can't afford a full team. We build your entire business infrastructure from the ground up in exchange for equity. We're genuine co-builders with skin in the game.</p>
+        <div class="absolute -top-3 left-6 bg-gold text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family:var(--font-mono);">MOST POPULAR</div>
+        <div class="text-3xl mb-4">🚀</div>
+        <h3 class="text-xl mb-3 font-display" style="color:var(--color-dark);">Add More Workflows</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Stack the workflows that matter most. Many customers start with lead generation + lead nurturing + scheduling — the sales pipeline that fills your calendar automatically.</p>
         <ul class="space-y-2 text-sm text-muted mb-4">
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> $0 out of pocket — we build everything</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> We take on the risk and earn through growth</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Ongoing operations and scaling included</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Best for early-stage, high-upside opportunities</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Mix and match any workflows</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Free setup on every workflow</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Example: 3 workflows = $897/mo</li>
         </ul>
-        <p class="text-xs font-bold uppercase tracking-wider" style="font-family: var(--font-mono); color: var(--color-gold);">Up to 50% equity</p>
+        <p class="text-xs font-bold uppercase tracking-wider" style="font-family:var(--font-mono);color:var(--color-gold);">+$199/mo each additional</p>
       </div>
-
-      <!-- Profit Sharing -->
+      <!-- Full Suite -->
       <div class="card-hover bg-white rounded-2xl p-8 border border-rule shadow-sm relative">
-        <div class="absolute -top-3 left-6 bg-dark text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family: var(--font-mono);">ESTABLISHED BIZ</div>
-        <div class="text-3xl mb-4">📈</div>
-        <h3 class="text-xl mb-3 font-display" style="color: var(--color-dark);">Profit Sharing</h3>
-        <p class="text-muted text-sm leading-relaxed mb-4">You're already running, already have customers — but hitting a ceiling. We provide the infrastructure to break through it and share in the revenue growth we generate together. We only win when you win.</p>
+        <div class="absolute -top-3 left-6 bg-dark text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family:var(--font-mono);">BEST VALUE</div>
+        <div class="text-3xl mb-4">👑</div>
+        <h3 class="text-xl mb-3 font-display" style="color:var(--color-dark);">Full Suite</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">All 6 workflows — lead generation, lead nurturing, scheduling, invoicing, marketing, and customer service. Your entire back-office, handled. The complete AI workforce for your business.</p>
         <ul class="space-y-2 text-sm text-muted mb-4">
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> $0 upfront — we earn from results</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Fully aligned incentives — we share in growth</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Best for established businesses ready to scale</li>
-          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Based on measurable revenue impact</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> All 6 AI employees included</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Free setup ($1,500+ value)</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Save $494/mo vs. buying separately</li>
         </ul>
-        <p class="text-xs font-bold uppercase tracking-wider" style="font-family: var(--font-mono); color: var(--color-gold);">% of revenue/profit</p>
+        <p class="text-xs font-bold uppercase tracking-wider" style="font-family:var(--font-mono);color:var(--color-gold);">$999/month</p>
       </div>
-
     </div>
-
-    <!-- Guarantee callout -->
+    <!-- Zero Admin Guarantee -->
     <div class="bg-dark rounded-2xl p-8 text-center mb-8">
-      <p class="text-gold font-mono text-sm uppercase tracking-widest mb-3">The Guarantee</p>
-      <h3 class="text-2xl md:text-3xl text-white font-display mb-4">Save 20+ Hours Per Week — or We Pay You $500</h3>
-      <p class="text-white/70 max-w-2xl mx-auto mb-6">If you complete your free trial and don't save 20+ hours per week, you owe nothing — and we'll pay you $500 for your time. No hoops, no fine print.</p>
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">
-        Book a Discovery Call — It's Free
-      </a>
+      <p class="text-gold font-mono text-sm uppercase tracking-widest mb-3">The Zero Admin Guarantee</p>
+      <h3 class="text-2xl md:text-3xl text-white font-display mb-4">Love It — or We Pay You $500</h3>
+      <p class="text-white/70 max-w-2xl mx-auto mb-6">Complete your 30-day free trial. If you don't love the results, you owe nothing — and we'll pay you $500 for your time. No hoops, no fine print. We only win when you win.</p>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">Book a Free Call — Zero Risk</a>
     </div>
-
-    <p class="text-center text-muted text-sm">All engagements start with a free discovery call. No commitment required.</p>
+    <p class="text-center text-muted text-sm">All packages include free setup, 30-day free trial, and cancel-anytime flexibility. No long-term contracts.</p>
   </div>
 </section>
 
-<!-- ─── FAQ ─── -->
-<section id="faq" class="py-20 px-6" style="background-color: var(--color-surface);">
+<!-- FAQ -->
+<section id="faq" class="py-20 px-6" style="background-color:var(--color-surface);">
   <div class="max-w-3xl mx-auto">
     <div class="text-center mb-14">
       <h2 class="mb-4">Frequently Asked Questions</h2>
       <p class="text-muted text-lg">Real answers to real questions.</p>
     </div>
-
     <div class="space-y-3" id="faq-list">
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          How is this different from just using ChatGPT?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">ChatGPT is a tool you use. We're a business infrastructure partner — we design, build, and operate a fully coordinated AI system for your specific business. That means custom AI agent teams handling email, follow-ups, scheduling, client communication, research, and more — proactively, around the clock, without you prompting anything. We're not handing you a tool. We're running your operations infrastructure so you can focus entirely on growth.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">How is this different from ServiceTitan or Jobber?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Those are software platforms — they give you tools and expect you to run them. We give you AI employees that do the actual work. We don't hand you a dashboard and say "good luck." We build, operate, and optimize your systems so you never have to touch them. You focus on the job site — your back-office runs itself.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          What kinds of tasks can my AI employee handle?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Email management, meeting scheduling, follow-up sequences, daily briefings, research and summaries, client communication drafts, records and reporting — and anything else we design together during setup. Every deployment is custom-built around your specific workflows.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">What kinds of home service businesses do you work with?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Plumbers, electricians, HVAC techs, roofers, cleaners, landscapers, handymen — any home service business with 1–20 employees. The smaller, the better fit. If you're spending hours every week on phone calls, texts, scheduling, invoicing, and marketing instead of doing the actual work, we're built for you.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          Do I need to be technical to use this?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Not at all. We handle 100% of the technical setup — connecting your email, calendar, and tools, configuring all workflows, and training the AI on your style. You just use email and calendar the way you normally do. There's no software to learn and no dashboards to manage.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">Do I need to be technical?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Not at all. We handle 100% of the technical setup. We connect to your existing tools, configure all workflows, and train the AI on your business. There's no software to learn, no dashboards to manage. You just keep doing what you normally do — the AI handles the rest.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          How quickly can I get started?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">From discovery call to live deployment is typically 1–2 weeks. We do the setup — connecting your tools, configuring the AI, and testing everything — before your trial starts. Most clients are fully operational within 10 business days.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">How quickly can I get started?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">From consultation to live is typically 1–2 weeks. We do all the setup — connecting your tools, configuring the AI, and testing everything — before your 30-day free trial begins.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          What does it cost?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">We offer three models depending on where you are. <strong>Subscription</strong> — starting at $500/month for a defined-scope deployment with clear deliverables, free 30-day trial, cancel anytime. <strong>Profit sharing</strong> — for established businesses ready to scale; we earn a percentage of the revenue growth we generate together, $0 upfront. <strong>Equity partnership</strong> — for early-stage founders where we build your entire AI infrastructure from the ground up in exchange for equity, also $0 upfront. The right model is worked out together during your free discovery call.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">What does it cost?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed"><strong>One workflow:</strong> $499/month. <strong>Each additional workflow:</strong> +$199/month. <strong>Full suite (all 6):</strong> $999/month. Every package includes free setup ($1,500+ value), a 30-day free trial, 24/7 AI employees, human backup when needed, monthly performance reports, and cancel-anytime flexibility. No long-term contracts.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          Can the AI communicate with my customers directly?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Yes — and it sounds like you. During setup, we train the AI on your past communications so it matches your tone and style. Most customers won't notice a difference; they'll just experience faster, more consistent communication. You can set approval workflows so you review anything sensitive before it goes out.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">Can the AI talk to my customers?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Yes — and it sounds like you. During setup, we train the AI on your communication style so responses match your tone. Most customers won't notice a difference — they'll just experience faster, more consistent communication. You can set approval rules so you review anything sensitive before it goes out.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          What if I'm not satisfied after the trial?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">You owe nothing. If you don't save 20+ hours per week during your trial, you walk away free — and we pay you $500 for your time. No invoices, no awkward conversations. We only win if you win.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">What's the Zero Admin Guarantee?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Complete your 30-day free trial. If you don't love the results, you owe nothing — and we pay you $500 for your time. No invoices, no awkward conversations, no fine print. We take on all the risk because we're confident in what we build.</div></div>
       </div>
-
       <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          How is my data kept secure?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">All data is encrypted in transit and at rest. Your business data is isolated — never shared with other clients. We follow privacy best practices and are GDPR-compliant. You can revoke AI access to any system at any time and request full data deletion. See our <a href="privacy.html" class="text-gold hover:underline">Privacy Policy</a> for full details.</div></div>
+        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color:var(--color-dark);">How is my data kept secure?<span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span></button>
+        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">All data is encrypted in transit and at rest. Your business data is isolated — never shared with other clients. You can revoke AI access to any system at any time and request full data deletion. See our <a href="privacy.html" class="text-gold hover:underline">Privacy Policy</a> for full details.</div></div>
       </div>
-
-      <div class="border border-rule rounded-2xl overflow-hidden shadow-sm">
-        <button class="faq-btn w-full flex items-center justify-between px-6 py-5 text-left font-semibold hover:bg-bg transition-colors font-display text-lg" style="color: var(--color-dark);">
-          Does this work for my industry?
-          <span class="faq-icon text-gold text-2xl font-light ml-4 shrink-0">+</span>
-        </button>
-        <div class="faq-answer"><div class="px-6 pb-5 text-muted leading-relaxed">Yes. We build custom AI infrastructure for small businesses across any industry — because the operational problems we solve (email overload, missed follow-ups, scheduling friction, slow communication) exist everywhere. Every system is purpose-built for how your specific business operates. Not a generic template — a custom-designed solution.</div></div>
-      </div>
-
     </div>
   </div>
 </section>
 
-<!-- ─── FINAL CTA / CONTACT ─── -->
+<!-- FINAL CTA -->
 <section id="contact" class="py-24 px-6 gradient-hero text-white">
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="mb-6 font-display text-white">Ready to Get 20+ Hours Back Every Week?</h2>
-    <p class="text-white/80 text-xl mb-10 leading-relaxed">
-      Free 30-day trial. Zero upfront cost. $500 if you don't love it.<br/>No pressure — just a 15-minute conversation to see if we're a fit.
-    </p>
+    <h2 class="mb-6 font-display text-white">Ready to Get Your Evenings Back?</h2>
+    <p class="text-white/80 text-xl mb-10 leading-relaxed">Free setup. 30-day free trial. The Zero Admin Guarantee.<br/>15 minutes to see if we're a fit. No pressure, no pitch.</p>
     <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call"
-         target="_blank" rel="noopener noreferrer"
-         class="w-full sm:w-auto bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">
-        📅 Schedule Free Discovery Call
-      </a>
-      <a href="mailto:jakehuffman@huffmansolutionsai.com"
-         class="w-full sm:w-auto border-2 border-white/40 hover:border-white text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors">
-        ✉️ Email Us
-      </a>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">📅 Schedule Free Consultation</a>
+      <a href="mailto:jakehuffman@huffmansolutionsai.com" class="w-full sm:w-auto border-2 border-white/40 hover:border-white text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors">✉️ Email Us</a>
     </div>
-    <p class="text-white/50 text-sm">
-      <img src="huffman-ai-secondary-logo.jpg" alt="Huffman AI Solutions" class="h-6 w-auto inline-block mr-3" />Huffman AI Solutions · Charlotte, NC · jakehuffman@huffmansolutionsai.com
-    </p>
+    <p class="text-white/50 text-sm"><img src="huffman-ai-secondary-logo.jpg" alt="Huffman AI Solutions" class="h-6 w-auto inline-block mr-3" />Huffman AI Solutions · Charlotte, NC · jakehuffman@huffmansolutionsai.com</p>
   </div>
 </section>
 
-<!-- ─── FOOTER ─── -->
+<!-- FOOTER -->
 <footer class="bg-dark text-white/50 pt-10 px-6">
   <div class="max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm mb-6">
-      <div class="flex items-center gap-3 font-display font-bold text-white/80">
-        <img src="huffman-ai-secondary-logo.jpg" alt="Huffman AI Solutions" class="h-6 w-auto" />
-        <span>Huffman AI Solutions</span>
-      </div>
+      <div class="flex items-center gap-3 font-display font-bold text-white/80"><img src="huffman-ai-secondary-logo.jpg" alt="Huffman AI Solutions" class="h-6 w-auto" /><span>Huffman AI Solutions</span></div>
       <div class="flex gap-6">
-        <a href="#features"  class="hover:text-white transition-colors">Features</a>
-        <a href="#pricing"   class="hover:text-white transition-colors">Pricing</a>
-        <a href="#faq"       class="hover:text-white transition-colors">FAQ</a>
+        <a href="#features" class="hover:text-white transition-colors">Features</a>
+        <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
         <a href="about.html" class="hover:text-white transition-colors">About</a>
         <a href="privacy.html" class="hover:text-white transition-colors">Privacy</a>
-        <a href="terms.html"   class="hover:text-white transition-colors">Terms</a>
+        <a href="terms.html" class="hover:text-white transition-colors">Terms</a>
       </div>
     </div>
-
-    <!-- Book a Free Call button above copyright -->
     <div class="text-center py-8 border-t border-white/10">
-      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer"
-         class="inline-block bg-gold text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:opacity-90 mb-6">
-        Book a Free Call
-      </a>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold px-8 py-3 rounded-xl transition-all shadow-md hover:opacity-90 mb-6">Book a Free Call</a>
       <p class="text-white/40 text-sm">© 2026 Huffman AI Solutions LLC · Charlotte, North Carolina</p>
     </div>
   </div>
 </footer>
 
-<!-- ─── JAVASCRIPT ─── -->
+<!-- JS -->
 <script>
-  // Mobile menu toggle
-  document.getElementById('menu-btn').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
-  });
-
-  // FAQ accordion
-  document.querySelectorAll('.faq-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const answer = btn.nextElementSibling;
-      const icon   = btn.querySelector('.faq-icon');
-      const isOpen = answer.classList.contains('open');
-
-      // Close all
-      document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));
-      document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('open'));
-
-      // Toggle clicked
-      if (!isOpen) {
-        answer.classList.add('open');
-        icon.classList.add('open');
-      }
-    });
-  });
+  document.getElementById('menu-btn').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('hidden');});
+  document.querySelectorAll('.faq-btn').forEach(btn=>{btn.addEventListener('click',()=>{const a=btn.nextElementSibling;const i=btn.querySelector('.faq-icon');const o=a.classList.contains('open');document.querySelectorAll('.faq-answer').forEach(x=>x.classList.remove('open'));document.querySelectorAll('.faq-icon').forEach(x=>x.classList.remove('open'));if(!o){a.classList.add('open');i.classList.add('open');}});});
 </script>
 </body>
 </html>
