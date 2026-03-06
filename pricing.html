@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing – Huffman AI Solutions</title>
+  <meta name="description" content="Simple, transparent pricing for home service businesses. Starting at $374/month with our 25% launch discount." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink:'#0d0d0d', dark:'#212936', gold:'#c8a96e', muted:'#6b6560', rule:'#d4cfc9', surface:'#ffffff', bg:'#f5f3ef' },
+          fontFamily: { display:['Cormorant Garamond','Georgia','serif'], sans:['IBM Plex Sans','system-ui','sans-serif'], mono:['IBM Plex Mono','Courier New','monospace'] }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --color-bg:#f5f3ef; --color-ink:#0d0d0d; --color-dark:#212936; --color-gold:#c8a96e; --color-muted:#6b6560; --color-rule:#d4cfc9; --color-surface:#ffffff; --font-display:'Cormorant Garamond',Georgia,serif; --font-body:'IBM Plex Sans',system-ui,sans-serif; }
+    body { background-color:var(--color-bg); color:var(--color-ink); font-family:var(--font-body); }
+    h1,h2,h3 { font-family:var(--font-display); font-weight:600; color:var(--color-ink); }
+  </style>
+</head>
+<body>
+<!-- NAV -->
+<nav class="fixed top-0 inset-x-0 z-40 backdrop-blur border-b border-gray-100" style="background-color:var(--color-bg);">
+  <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="huffman-ai-logo-3.jpg" alt="Huffman AI Solutions" class="h-10 w-auto" />
+      <span class="font-display font-semibold text-2xl" style="color:var(--color-ink);">Huffman AI Solutions</span>
+    </a>
+    <div class="hidden md:flex items-center gap-10 font-display text-base font-medium" style="color:var(--color-muted);">
+      <a href="features.html" class="hover:text-ink transition-colors">Features</a>
+      <a href="pricing.html" class="text-ink font-semibold">Pricing</a>
+      <a href="about.html" class="hover:text-ink transition-colors">About</a>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg font-display font-semibold" style="background-color:var(--color-gold);color:var(--color-surface);">Book a Call</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PRICING -->
+<section class="pt-32 pb-20 px-6" style="background-color:var(--color-bg);">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-14">
+      <h1 class="mb-4">Simple, Transparent Pricing</h1>
+      <p class="text-muted text-lg max-w-2xl mx-auto">Pick the workflows you need. Every package includes free setup ($1,500+ value), a 30-day free trial, 24/7 automation, human backup, monthly performance reports, and cancel-anytime flexibility.</p>
+    </div>
+
+    <!-- Urgency Banner -->
+    <div class="bg-red-500/10 border-2 border-red-400/30 rounded-2xl p-6 text-center mb-10">
+      <p class="text-lg font-bold mb-1" style="color:var(--color-ink);"><span style="color:#dc2626;">25% off for our next 3 clients — offer ends March 31, 2026.</span></p>
+      <p class="text-muted text-sm">Lock in the discounted rate for as long as you stay. Once these 3 spots fill or March ends — whichever comes first — pricing goes back to standard.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <!-- The Launch Pad -->
+      <div class="card-hover bg-white rounded-2xl p-8 border border-rule shadow-sm relative">
+        <div class="absolute -top-3 left-6 bg-dark text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family:var(--font-mono);">STARTER</div>
+        <h3 class="text-xl mb-3 font-display" style="color:var(--color-dark);">The Launch Pad</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Choose any single workflow — lead generation, lead nurturing, scheduling, invoicing, marketing, or customer service.</p>
+        <ul class="space-y-2 text-sm text-muted mb-4">
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> One automated workflow</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Free setup ($1,500+ value)</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Cancel anytime</li>
+        </ul>
+        <p class="text-sm mb-0.5"><span class="line-through text-muted" style="font-family:var(--font-mono);">$499/mo</span></p>
+        <p class="text-xl font-bold" style="font-family:var(--font-mono);color:#dc2626;">$374/mo <span class="text-xs font-semibold text-gold uppercase">launch price</span></p>
+      </div>
+
+      <!-- The Stack -->
+      <div class="card-hover bg-white rounded-2xl p-8 border-2 border-gold shadow-md relative">
+        <div class="absolute -top-3 left-6 bg-gold text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family:var(--font-mono);">MOST POPULAR</div>
+        <h3 class="text-xl mb-3 font-display" style="color:var(--color-dark);">The Stack</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">Stack the workflows that matter most. Many customers start with lead generation + lead nurturing + scheduling.</p>
+        <ul class="space-y-2 text-sm text-muted mb-4">
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Mix and match any workflows</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Free setup on every workflow</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Example: 3 workflows = <span class="line-through">$897</span> <strong style="color:#dc2626;">$673/mo</strong></li>
+        </ul>
+        <p class="text-sm mb-0.5"><span class="line-through text-muted" style="font-family:var(--font-mono);">+$199/mo each</span></p>
+        <p class="text-xl font-bold" style="font-family:var(--font-mono);color:#dc2626;">+$149/mo each <span class="text-xs font-semibold text-gold uppercase">launch price</span></p>
+      </div>
+
+      <!-- The All In -->
+      <div class="card-hover bg-white rounded-2xl p-8 border border-rule shadow-sm relative">
+        <div class="absolute -top-3 left-6 bg-dark text-white text-xs font-bold px-4 py-1 rounded-full" style="font-family:var(--font-mono);">BEST VALUE</div>
+        <h3 class="text-xl mb-3 font-display" style="color:var(--color-dark);">The All In</h3>
+        <p class="text-muted text-sm leading-relaxed mb-4">All 6 workflows — lead generation, lead nurturing, scheduling, invoicing, marketing, and customer service.</p>
+        <ul class="space-y-2 text-sm text-muted mb-4">
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> All 6 workflows included</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Free setup ($1,500+ value)</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> 30-day free trial</li>
+          <li class="flex items-start gap-2"><span class="text-gold">✓</span> Save $494/mo vs. buying separately</li>
+        </ul>
+        <p class="text-sm mb-0.5"><span class="line-through text-muted" style="font-family:var(--font-mono);">$999/mo</span></p>
+        <p class="text-xl font-bold" style="font-family:var(--font-mono);color:#dc2626;">$749/mo <span class="text-xs font-semibold text-gold uppercase">launch price</span></p>
+      </div>
+    </div>
+
+    <!-- Zero Admin Guarantee -->
+    <div class="bg-dark rounded-2xl p-8 text-center mb-8">
+      <p class="text-gold font-mono text-sm uppercase tracking-widest mb-3">The Zero Admin Guarantee</p>
+      <h2 class="text-2xl md:text-3xl text-white font-display mb-4">Love It — or We Pay You $500</h2>
+      <p class="text-white/70 max-w-2xl mx-auto mb-6">Complete your 30-day free trial. If you don't love the results, you owe nothing — and we'll pay you $500 for your time. No hoops, no fine print. We only win when you win.</p>
+      <a href="https://calendly.com/jakehuffman-huffmansolutionsai/free-discovery-call" target="_blank" rel="noopener noreferrer" class="inline-block bg-gold text-white font-bold text-lg px-8 py-4 rounded-xl transition-all shadow-lg hover:opacity-90">Book a Free Call — Zero Risk</a>
+    </div>
+    <p class="text-center text-muted text-sm">All packages include free setup, 30-day free trial, and cancel-anytime flexibility. No long-term contracts.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-12 px-6" style="background:var(--color-dark);color:var(--color-surface);">
+  <div class="max-w-6xl mx-auto text-center">
+    <p>© 2026 Huffman AI Solutions LLC · Charlotte, North Carolina</p>
+    <div class="flex justify-center gap-6 mt-4 text-sm">
+      <a href="features.html" class="hover:text-white">Features</a>
+      <a href="pricing.html" class="hover:text-white">Pricing</a>
+      <a href="about.html" class="hover:text-white">About</a>
+      <a href="privacy.html" class="hover:text-white">Privacy</a>
+      <a href="terms.html" class="hover:text-white">Terms</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
